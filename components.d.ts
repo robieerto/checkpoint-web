@@ -13,6 +13,8 @@ declare module 'vue' {
     CaseStudySection: typeof import('./src/components/CaseStudySection.vue')['default']
     ContactLandingSection: typeof import('./src/components/ContactLandingSection.vue')['default']
     FooterSection: typeof import('./src/components/FooterSection.vue')['default']
+    HeaderBar: typeof import('./src/components/HeaderBar.vue')['default']
+    HeaderMenu: typeof import('./src/components/HeaderMenu.vue')['default']
     ImmersiveSection: typeof import('./src/components/ImmersiveSection.vue')['default']
     LandingSection: typeof import('./src/components/LandingSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
