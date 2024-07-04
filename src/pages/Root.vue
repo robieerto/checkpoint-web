@@ -1,42 +1,51 @@
 <template>
   <div
-    class="w-full relative flex flex-col items-start justify-start gap-[574px] leading-[normal] tracking-[normal] mq900:gap-[143px] mq1350:gap-[287px]"
+    class="w-full relative flex flex-col items-end justify-start leading-[normal] tracking-[normal]"
   >
-    <main
-      class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1 box-border max-w-full"
+    <section
+      class="self-stretch flex flex-row items-start justify-end py-0 pr-px pl-1 box-border max-w-full"
     >
-      <section class="flex-1 flex flex-col items-end justify-start max-w-full">
-        <FRAME2 /><Frame1 /><FrameComp />
-      </section>
-    </main>
-    <div
-      class="self-stretch flex flex-col items-start justify-start py-0 pr-1 pl-0 box-border max-w-full"
-    >
-      <div class="self-stretch flex flex-row items-start justify-start relative max-w-full">
-        <GroupFrame /><CheckpointFeatures />
+      <div class="flex-1 flex flex-col items-start justify-start max-w-full">
+        <LandingSection />
+        <BotherSection />
       </div>
-      <FooterComp />
-    </div>
+    </section>
+    <ImmersiveSection />
+    <section
+      class="self-stretch bg-schemes-on-primary flex flex-col items-center justify-start pt-[59px] pb-[39px] pr-[23px] pl-5 box-border gap-[135px] max-w-full mq900:gap-[34px] mq900:pt-[25px] mq900:pb-5 mq900:box-border mq1350:gap-[67px] mq1350:pt-[38px] mq1350:pb-[25px] mq1350:box-border mq450:gap-[17px]"
+    >
+      <div class="w-[1920px] h-[1123px] relative bg-schemes-on-primary hidden max-w-full" />
+      <CaseStudySection />
+      <ContactLandingSection />
+    </section>
+    <section class="self-stretch flex flex-col items-start justify-start max-w-full">
+      <TestimonialsSection /><BenefitsSection /><FooterSection />
+    </section>
   </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
-import FRAME2 from '../components/FRAME2.vue'
-import Frame1 from '../components/Frame1.vue'
-import FrameComp from '../components/Frame.vue'
-import GroupFrame from '../components/GroupFrame.vue'
-import CheckpointFeatures from '../components/CheckpointFeatures.vue'
-import FooterComp from '../components/Footer.vue'
+import LandingSection from '../components/LandingSection.vue'
+import BotherSection from '../components/BotherSection.vue'
+import ImmersiveSection from '../components/ImmersiveSection.vue'
+import CaseStudySection from '../components/CaseStudySection.vue'
+import ContactLandingSection from '../components/ContactLandingSection.vue'
+import TestimonialsSection from '../components/TestimonialsSection.vue'
+import BenefitsSection from '../components/BenefitsSection.vue'
+import FooterSection from '../components/FooterSection.vue'
 
 export default defineComponent({
-  name: 'RootComp',
+  name: 'RootPage',
   components: {
-    FRAME2,
-    Frame1,
-    FrameComp,
-    GroupFrame,
-    CheckpointFeatures,
-    FooterComp
+    LandingSection,
+    BotherSection,
+    ImmersiveSection,
+    CaseStudySection,
+    ContactLandingSection,
+    TestimonialsSection,
+    BenefitsSection,
+    FooterSection
   }
 })
 </script>

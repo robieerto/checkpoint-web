@@ -7,18 +7,16 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Footer: typeof import('./src/components/Footer.vue')['default']
-    FooterComp: typeof import('./src/components/FooterComp.vue')['default']
-    Frame: typeof import('./src/components/Frame.vue')['default']
-    Frame1: typeof import('./src/components/Frame1.vue')['default']
-    FRAME2: typeof import('./src/components/FRAME2.vue')['default']
-    Frame3: typeof import('./src/components/Frame3.vue')['default']
-    GroupFrame: typeof import('./src/components/GroupFrame.vue')['default']
-    CheckpointFeatures: typeof import('./src/components/CheckpointFeatures.vue')['default']
-    LangChooser: typeof import('./src/components/LangChooser.vue')['default']
-    MainCarousel: typeof import('./src/components/MainCarousel.vue')['default']
-    MainComp: typeof import('./src/components/MainComp.vue')['default']
+    BenefitsSection: typeof import('./src/components/BenefitsSection.vue')['default']
+    BenefitTwoContent: typeof import('./src/components/BenefitTwoContent.vue')['default']
+    BotherSection: typeof import('./src/components/BotherSection.vue')['default']
+    CaseStudySection: typeof import('./src/components/CaseStudySection.vue')['default']
+    ContactLandingSection: typeof import('./src/components/ContactLandingSection.vue')['default']
+    FooterSection: typeof import('./src/components/FooterSection.vue')['default']
+    ImmersiveSection: typeof import('./src/components/ImmersiveSection.vue')['default']
+    LandingSection: typeof import('./src/components/LandingSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TestimonialsSection: typeof import('./src/components/TestimonialsSection.vue')['default']
   }
 }
