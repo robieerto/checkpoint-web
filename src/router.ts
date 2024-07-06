@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Root from './pages/Root.vue'
+import Reservation from './pages/Reservation.vue'
+import GetInfo from './pages/GetInfo.vue'
 
 interface Route {
   path: string
@@ -12,12 +14,26 @@ const routes: Route[] = [
     path: '/',
     name: 'Root',
     component: Root
+  },
+  {
+    path: '/reservation',
+    name: 'Reservation',
+    component: Reservation
+  },
+  {
+    path: '/getInfo',
+    name: 'GetInfo',
+    component: GetInfo
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior() {
+    // always scroll to top
+    return { top: 0, left: 0, behavior: 'smooth' }
+  }
 })
 
 router.beforeEach((toRoute, _, next) => {

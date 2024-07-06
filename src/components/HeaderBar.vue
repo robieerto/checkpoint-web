@@ -1,29 +1,41 @@
 <template>
-  <div
-    class="self-stretch bg-schemes-on-primary flex flex-col items-start justify-start pt-[29px] pr-[62px] pl-[92px] box-border gap-[28px] max-w-full text-justify text-29xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pl-[23px] mq900:pt-[21px] mq900:box-border"
+  <nav
+    class="bg-schemes-on-primary fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
   >
-    <header
-      class="self-stretch flex flex-row items-end justify-start gap-[151px] max-w-full text-justify text-13xl text-material-theme-black font-roboto mq900:gap-[38px] mq1350:gap-[75px] mq450:gap-[19px]"
+    <div
+      class="flex flex-wrap items-center justify-between pt-4 pb-4 mq900:px-[30px] pl-[92px] pr-[62px]"
     >
-      <div
-        class="w-full flex flex-row items-end justify-between pt-2 pb-5 pr-0 pl-[3px] box-border leading-[normal] tracking-[normal] gap-[20px] text-justify text-[32px] text-material-theme-black font-roboto mq950:flex-wrap"
+      <img
+        class="cursor-pointer mq950:w-[206px] w-[406px] !m-[0] left-[-3px]"
+        loading="lazy"
+        alt=""
+        src="/group-4737.svg"
+        @click="() => router.push({ path: '/' })"
+      />
+
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden bg-schemes-on-primary"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+        @click="isMenuExpanded = !isMenuExpanded"
       >
-        <div class="flex flex-col">
-          <img
-            class="h-[89.8px] w-[406px] !m-[0] left-[-3px]"
-            loading="lazy"
-            alt=""
-            src="/group-4737.svg"
+        <span class="sr-only">Open main menu</span>
+        <img v-if="!isMenuExpanded" class="w-[406px]" loading="lazy" alt="" src="/menu.svg" />
+        <svg v-else viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
           />
-          <h1
-            class="m-0 mt-[-18px] relative text-inherit font-semibold font-inherit inline-block max-w-full z-[1] mq450:text-[19px] mq450:leading-[34px] mq950:text-[26px] mq950:leading-[45px]"
-          >
-            by ofrules
-          </h1>
-        </div>
-        <div class="self-stretch flex flex-row items-start justify-end max-w-full gap-[29px]">
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-sticky">
+        <div
+          class="flex flex-col items-center my-5 md:flex-row md:item-start md:mt-0 justify-end max-w-full gap-[29px]"
+        >
           <button
             class="cursor-pointer [border:none] pt-[18px] px-[26px] pb-[17px] bg-material-theme-extended-deep-blue-signature-light-color-container flex-1 shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start hover:bg-lightsteelblue"
+            @click="() => router.push({ path: '/reservation' })"
           >
             <a
               class="[text-decoration:none] flex-1 relative text-base tracking-[-0.25px] leading-[17px] font-roboto text-schemes-on-primary-container text-center z-[1]"
@@ -31,7 +43,8 @@
             >
           </button>
           <button
-            class="cursor-pointer [border:none] py-7 pl-[44px] pr-[24px] bg-schemes-secondary-container flex-[0.8298] shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap hover:bg-wheat"
+            class="cursor-pointer [border:none] md:py-7 pt-[18px] pb-[17px] pl-[44px] pr-[24px] bg-schemes-secondary-container flex-[0.8298] shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap hover:bg-wheat"
+            @click="() => router.push({ path: '/getInfo' })"
           >
             <a
               class="[text-decoration:none] relative text-base tracking-[-0.25px] leading-[14px] font-roboto text-schemes-on-primary-container text-left inline-block min-w-[77px] z-[1]"
@@ -40,13 +53,21 @@
           </button>
         </div>
       </div>
-    </header>
-  </div>
+    </div>
+  </nav>
 </template>
-<script lang="ts">
-import { defineComponent } from 'vue'
 
-export default defineComponent({
-  name: 'HeaderBar'
+<script setup lang="ts">
+import { onMounted, ref } from 'vue'
+import { initFlowbite } from 'flowbite'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const isMenuExpanded = ref(false)
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+  initFlowbite()
 })
 </script>

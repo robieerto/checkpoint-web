@@ -28,9 +28,6 @@
         <div
           class="w-[438px] box-border flex flex-row items-start justify-start pt-[33px] px-[27px] pb-1.5 max-w-full z-[1] border-[1px] border-solid border-material-theme-black"
         >
-          <div
-            class="h-[70px] w-[438px] relative box-border hidden max-w-full border-[1px] border-solid border-material-theme-black"
-          />
           <input
             class="w-[46px] [border:none] [outline:none] font-roboto text-base bg-[transparent] h-[27px] relative tracking-[-0.25px] leading-[64px] text-material-theme-black text-left flex items-center p-0 z-[2]"
             placeholder="*email"
@@ -62,9 +59,6 @@
               class="self-stretch flex flex-row items-start justify-start pt-[41px] px-[18px] pb-0 z-[1] border-[1px] border-solid border-material-theme-black"
             >
               <div
-                class="h-[70px] w-[210px] relative box-border hidden border-[1px] border-solid border-material-theme-black"
-              />
-              <div
                 class="relative text-base tracking-[-0.25px] leading-[27px] font-roboto text-material-theme-black text-left inline-block min-w-[77px] z-[2]"
               >
                 společnost
@@ -73,7 +67,6 @@
             <button
               class="cursor-pointer [border:none] py-7 px-[34px] bg-schemes-secondary-container shadow-[4px_6px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap z-[1] hover:bg-wheat"
             >
-              <div class="h-[70px] w-[146px] relative bg-schemes-secondary-container hidden" />
               <div
                 class="relative text-base tracking-[-0.25px] leading-[14px] font-roboto text-schemes-on-primary-container text-left inline-block min-w-[77px] z-[1]"
               >

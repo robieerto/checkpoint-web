@@ -3,10 +3,10 @@
     class="self-stretch bg-schemes-on-primary flex flex-col items-start justify-start pb-[68px] pr-[62px] pl-[92px] box-border gap-[28px] max-w-full text-justify text-29xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pl-[23px] mq900:pb-[29px] mq900:box-border mq1350:pb-11 mq1350:pr-[31px] mq1350:pl-[46px] mq1350:box-border"
   >
     <header
-      class="self-stretch flex flex-row items-end justify-start gap-[151px] max-w-full text-justify text-13xl text-material-theme-black font-roboto mq900:gap-[38px] mq450:gap-[19px]"
+      class="self-stretch flex flex-row items-end justify-start max-w-full text-justify text-13xl text-material-theme-black font-roboto mq900:gap-[38px] mq450:gap-[19px]"
     >
       <div
-        class="flex-1 flex flex-col items-start justify-start gap-[47px] max-w-full mq900:gap-[23px]"
+        class="flex-1 flex flex-col items-start justify-start gap-[47px] max-w-[1000px] mq900:gap-[23px]"
       >
         <div
           class="self-stretch shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-11xl bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-start justify-start pt-12 px-[119px] pb-[7px] box-border gap-[63px] max-w-full z-[1] text-left text-45xl text-schemes-on-primary mq900:gap-[23px] mq900:pt-[31px] mq900:px-[29px] mq900:pb-5 mq900:box-border mq1350:gap-[46px] mq1350:pl-[59px] mq1350:pr-[59px] mq1350:box-border"
@@ -16,7 +16,7 @@
               class="flex-1 flex flex-col items-start justify-start gap-[53px] max-w-full mq450:gap-[26px]"
             >
               <h1
-                class="m-0 mq900:w-[790px] relative text-inherit leading-[53px] font-bold font-inherit flex items-center max-w-full z-[2]"
+                class="m-0 relative text-inherit leading-[53px] font-bold font-inherit flex items-center max-w-full z-[2]"
               >
                 Zefektivněte řízení svého hotelu pomocí Checkpointu
               </h1>
@@ -36,10 +36,8 @@
               <div class="flex-1 flex flex-row items-start justify-start gap-[29px] max-w-full">
                 <button
                   class="cursor-pointer [border:none] pt-[18px] px-[26px] pb-[17px] bg-material-theme-extended-deep-blue-signature-light-color-container flex-1 flex flex-row items-start justify-start z-[2] hover:bg-lightsteelblue"
+                  @click="() => router.push({ path: '/reservation' })"
                 >
-                  <div
-                    class="h-[70px] w-[146px] relative bg-material-theme-extended-deep-blue-signature-light-color-container hidden"
-                  />
                   <div
                     class="flex-1 relative text-base tracking-[-0.25px] leading-[17px] font-roboto text-schemes-on-primary-container text-center z-[1]"
                   >
@@ -48,8 +46,8 @@
                 </button>
                 <button
                   class="cursor-pointer [border:none] py-7 px-[38px] bg-schemes-secondary-container flex-[0.7447] flex flex-row items-start justify-start whitespace-nowrap z-[2] hover:bg-wheat"
+                  @click="() => router.push({ path: '/getInfo' })"
                 >
-                  <div class="h-[70px] w-[146px] relative bg-schemes-secondary-container hidden" />
                   <div
                     class="relative text-base tracking-[-0.25px] leading-[14px] font-roboto text-schemes-on-primary-container text-left inline-block min-w-[70px] z-[1]"
                   >
@@ -65,7 +63,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col m-auto items-start justify-start gap-[83px] max-w-full text-center text-base text-schemes-on-primary-container mq900:gap-[41px]"
+        class="flex flex-col m-auto items-start justify-start gap-[83px] max-w-full text-center text-base text-schemes-on-primary-container mq900:hidden"
       >
         <img
           class="w-[299px] flex-1 relative max-h-full object-contain z-[1]"
@@ -160,10 +158,8 @@
     </div>
   </div>
 </template>
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
 
-export default defineComponent({
-  name: 'LandingSection'
-})
+const router = useRouter()
 </script>

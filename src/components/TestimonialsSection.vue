@@ -1,11 +1,10 @@
 <template>
   <div
-    class="self-stretch flex flex-row items-start justify-start pt-0 pb-[469px] pr-0 pl-[5px] box-border max-w-full text-justify text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[198px] mq900:box-border mq1350:pb-[305px] mq1350:box-border"
+    class="self-stretch flex flex-row items-start justify-start pt-0 pb-[469px] pr-0 box-border max-w-full text-justify text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[198px] mq900:box-border mq1350:pb-[305px] mq1350:box-border"
   >
     <div
       class="flex-1 bg-schemes-inverse-on-surface flex flex-col items-start justify-start pt-[77px] pb-[207px] pr-[23px] pl-[348px] box-border gap-[116px] shrink-0 max-w-full mq900:gap-[29px] mq900:pl-[87px] mq900:pt-[50px] mq900:pb-[135px] mq900:box-border mq1350:gap-[58px] mq1350:pl-[174px] mq1350:box-border"
     >
-      <div class="w-[1920px] h-[628px] relative bg-schemes-inverse-on-surface hidden max-w-full" />
       <div class="w-[1224px] flex flex-row items-start justify-center max-w-full">
         <h1
           class="m-0 relative text-inherit leading-[36px] font-semibold font-inherit z-[1] mq900:text-32xl mq900:leading-[29px] mq450:text-19xl mq450:leading-[22px]"

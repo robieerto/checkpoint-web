@@ -1,6 +1,6 @@
 <template>
   <div
-    class="self-stretch bg-schemes-on-primary flex flex-row items-start justify-start pt-[50px] px-[62px] pb-[82px] box-border gap-[317px] z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto"
+    class="self-stretch bg-schemes-on-primary flex flex-row items-start justify-start pt-[50px] px-[62px] pb-[82px] box-border gap-[317px] z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto gap-[158px] mq900:pb-[53px] mq900:box-border mq1350:gap-[40px] mq1350:pl-[31px] mq1350:pr-[31px] mq1350:box-border mq450:pb-[34px] mq450:box-border mq1800:flex-wrap"
   >
     <div
       class="w-[673px] flex flex-col items-start justify-start gap-[240px] mq1350:gap-[60px] mq1800:flex-1"
