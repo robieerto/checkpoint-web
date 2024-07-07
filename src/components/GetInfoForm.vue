@@ -16,7 +16,7 @@
               </div>
             </div>
             <input
-              class="[border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
+              class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
               type="text"
             />
           </div>
@@ -29,7 +29,7 @@
               </div>
             </div>
             <input
-              class="[border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
+              class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
               type="text"
             />
           </div>
@@ -45,7 +45,7 @@
             </div>
           </div>
           <input
-            class="[border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
+            class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
             type="text"
           />
         </div>
@@ -58,7 +58,7 @@
             </div>
           </div>
           <input
-            class="[border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
+            class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
             type="text"
           />
         </div>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <textarea
-          class="[border:none] bg-gainsboro self-stretch h-[141px] w-auto [outline:none] resize-none relative rounded-xl z-[2]"
+          class="pt-4 input-text-size [border:none] bg-gainsboro self-stretch h-[141px] w-auto [outline:none] resize-none relative rounded-xl z-[2]"
           rows="7"
           cols="21"
         />
@@ -90,6 +90,15 @@
     </button>
   </form>
 </template>
+
+<style scoped>
+.input-text-size {
+  font-size: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+</style>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 

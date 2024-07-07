@@ -27,13 +27,13 @@
               </div>
             </div>
           </div>
-          <div
-            class="w-[322px] flex flex-col items-start justify-start gap-[12px] max-w-full text-base"
-          >
+          <div class="flex flex-col items-start justify-start gap-[12px] max-w-full text-base">
             <div
               class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-px box-border max-w-full"
             >
-              <div class="flex-1 flex flex-row items-start justify-start gap-[29px] max-w-full">
+              <div
+                class="flex-1 flex flex-row items-start justify-start mq450:gap-[10px] gap-[29px] max-w-full"
+              >
                 <button
                   class="cursor-pointer [border:none] pt-[18px] px-[26px] pb-[17px] bg-material-theme-extended-deep-blue-signature-light-color-container flex-1 flex flex-row items-start justify-start z-[2] hover:bg-lightsteelblue"
                   @click="() => goToPage(router, '/reservation')"
@@ -45,7 +45,7 @@
                   </div>
                 </button>
                 <button
-                  class="cursor-pointer [border:none] py-7 px-[38px] bg-schemes-secondary-container flex-[0.7447] flex flex-row items-start justify-start whitespace-nowrap z-[2] hover:bg-wheat"
+                  class="cursor-pointer [border:none] py-7 pl-[38px] pr-[30px] bg-schemes-secondary-container flex-[0.7447] flex flex-row items-start justify-start whitespace-nowrap z-[2] hover:bg-wheat"
                   @click="() => goToPage(router, '/getInfo')"
                 >
                   <div
@@ -56,7 +56,7 @@
                 </button>
               </div>
             </div>
-            <div class="relative tracking-[-0.25px] pb-[38px] whitespace-nowrap z-[2]">
+            <div class="relative tracking-[-0.25px] pb-[38px] z-[2]">
               *rezervujte si ukázku bez jakýchkoli závazků
             </div>
           </div>
