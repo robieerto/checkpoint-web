@@ -15,7 +15,7 @@
       class="w-[332px] flex flex-col items-end justify-start gap-[20px] min-w-[332px] max-w-full text-base text-schemes-on-primary-container mq1800:flex-1"
     >
       <textarea
-        class="[border:none] bg-darkgray h-[322px] w-auto [outline:none] self-stretch relative z-[2]"
+        class="[border:none] bg-darkgray h-[322px] w-auto self-stretch [outline:none] relative z-[2]"
         rows="16"
         cols="17"
       />

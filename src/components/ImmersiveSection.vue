@@ -104,7 +104,7 @@
               </div>
             </div>
             <div
-              class="h-[591px] w-[499.9px] flex flex-col items-start justify-start min-w-[499.9px] max-w-full mq1350:min-w-full mq1800:flex-1"
+              class="mq900:hidden h-[591px] w-[499.9px] flex flex-col items-start justify-start min-w-[499.9px] max-w-full mq1350:min-w-full mq1800:flex-1"
             >
               <div class="self-stretch flex flex-row items-start justify-start max-w-full z-[1]">
                 <div class="h-[527.5px] flex-1 relative max-w-full">
@@ -138,7 +138,7 @@
           class="self-stretch flex flex-row items-start justify-start gap-[152.1px] max-w-full mq900:gap-[38px] mq1350:gap-[76px] mq450:gap-[19px] mq1800:flex-wrap"
         >
           <div
-            class="w-[499.9px] flex flex-col items-start justify-start pt-24 px-0 pb-0 box-border min-w-[499.9px] max-w-full mq900:pt-[62px] mq900:box-border mq1350:min-w-full mq1800:flex-1"
+            class="w-[499.9px] mq900:hidden flex flex-col items-start justify-start pt-24 px-0 pb-0 box-border min-w-[499.9px] max-w-full mq900:pt-[62px] mq900:box-border mq1350:min-w-full mq1800:flex-1"
           >
             <div
               class="self-stretch h-[548px] flex flex-row items-start justify-start relative z-[1]"
@@ -300,7 +300,7 @@
             <div
               class="w-[499.9px] flex flex-col items-start justify-start pt-7 px-0 pb-0 box-border min-w-[499.9px] max-w-full mq1350:min-w-full mq1800:flex-1"
             >
-              <div class="self-stretch flex flex-row items-start justify-start max-w-full z-[1]">
+              <div class="mq900:hidden flex flex-row items-start justify-start max-w-full z-[1]">
                 <div class="h-[597.5px] flex-1 relative max-w-full">
                   <div class="absolute top-[0px] left-[0px] w-full h-full">
                     <img

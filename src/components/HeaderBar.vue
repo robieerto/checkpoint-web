@@ -10,10 +10,16 @@
         loading="lazy"
         alt=""
         src="/group-4737.svg"
-        @click="() => router.push({ path: '/' })"
+        @click="
+          () => {
+            goToPage(router, '/')
+            collapseMenu()
+          }
+        "
       />
 
       <button
+        id="navbar-toggle"
         data-collapse-toggle="navbar-sticky"
         type="button"
         class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden bg-schemes-on-primary"
@@ -35,7 +41,12 @@
         >
           <button
             class="cursor-pointer [border:none] pt-[18px] px-[26px] pb-[17px] bg-material-theme-extended-deep-blue-signature-light-color-container flex-1 shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start hover:bg-lightsteelblue"
-            @click="() => router.push({ path: '/reservation' })"
+            @click="
+              () => {
+                goToPage(router, '/reservation')
+                collapseMenu()
+              }
+            "
           >
             <a
               class="[text-decoration:none] flex-1 relative text-base tracking-[-0.25px] leading-[17px] font-roboto text-schemes-on-primary-container text-center z-[1]"
@@ -44,7 +55,12 @@
           </button>
           <button
             class="cursor-pointer [border:none] md:py-7 pt-[18px] pb-[17px] pl-[44px] pr-[24px] bg-schemes-secondary-container flex-[0.8298] shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap hover:bg-wheat"
-            @click="() => router.push({ path: '/getInfo' })"
+            @click="
+              () => {
+                goToPage(router, '/getInfo')
+                collapseMenu()
+              }
+            "
           >
             <a
               class="[text-decoration:none] relative text-base tracking-[-0.25px] leading-[14px] font-roboto text-schemes-on-primary-container text-left inline-block min-w-[77px] z-[1]"
@@ -60,6 +76,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { initFlowbite } from 'flowbite'
+import { goToPage } from '../helpers'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -70,4 +87,12 @@ const isMenuExpanded = ref(false)
 onMounted(() => {
   initFlowbite()
 })
+
+function collapseMenu() {
+  const navbar = document.getElementById('navbar-sticky')
+  const navbarToggle = document.getElementById('navbar-toggle')
+  if (!navbar?.classList.contains('hidden')) {
+    navbarToggle?.click()
+  }
+}
 </script>

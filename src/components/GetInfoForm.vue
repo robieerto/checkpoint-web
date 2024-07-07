@@ -72,7 +72,7 @@
           </div>
         </div>
         <textarea
-          class="[border:none] bg-gainsboro h-[141px] w-auto [outline:none] resize-none self-stretch relative rounded-xl z-[2]"
+          class="[border:none] bg-gainsboro self-stretch h-[141px] w-auto [outline:none] resize-none relative rounded-xl z-[2]"
           rows="7"
           cols="21"
         />
