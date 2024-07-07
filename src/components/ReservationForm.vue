@@ -7,7 +7,7 @@
       v-if="state.success"
       class="m-0 mb-5 flex-1 relative text-32xl font-semibold font-roboto text-schemes-on-primary text-center inline-block max-w-full z-[1] mq450:leading-[22px]"
     >
-      Byli jste úspěšně přihlášeni!
+      Vaši žádost jsme zaznamenali!
     </h1>
     <h1
       v-else-if="state.fail"
@@ -140,7 +140,7 @@ const state = reactive({
 })
 
 const formData = reactive({
-  access_key: '889fcc84-433d-4a79-8694-4bce24016003',
+  access_key: '49d2b29b-a01a-4a61-b8f0-7693493d5631',
   reservation: 'Rezervácia ukážky',
   name: '',
   company: '',
