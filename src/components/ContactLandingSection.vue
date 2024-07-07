@@ -26,16 +26,16 @@
         </div>
       </div>
       <div
-        v-if="success"
+        v-if="state.success"
         class="mt-[20px] shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-31xl bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-start justify-start px-[157px] py-[23px] box-border gap-[53.5px] max-w-full z-[6] mq900:box-border mq1350:pl-[78px] mq1350:pr-[78px] mq1350:box-border"
       >
         <h1
-          class="m-0 flex-1 relative text-32xlfont-semibold font-roboto text-schemes-on-primary text-center inline-block max-w-full z-[1] mq450:leading-[22px]"
+          class="m-0 flex-1 relative text-32xl font-semibold font-roboto text-schemes-on-primary text-center inline-block max-w-full z-[1] mq450:leading-[22px]"
         >
           Byli jste úspěšně přihlášeni!
         </h1>
       </div>
-      <div v-if="!success" class="self-stretch flex flex-col items-center justify-center">
+      <div v-if="!state.success" class="self-stretch flex flex-col items-center justify-center">
         <div
           class="self-stretch flex flex-row items-center justify-center gap-[22px] mq850:flex-wrap"
         >
@@ -50,16 +50,16 @@
                 v-model="formData.email"
               />
             </div>
-            <div v-if="emptyMail" class="w-full">
+            <div v-if="state.emptyMail" class="w-full">
               <p class="font-roboto text-base text-red-400">*email je povinný</p>
             </div>
-            <div v-else-if="errorMail" class="w-full">
-              <p class="font-roboto text-base text-red-400">*email je v nesprávnom formáte</p>
+            <div v-else-if="state.errorMail" class="w-full">
+              <p class="font-roboto text-base text-red-400">*email je v nesprávném formátu</p>
             </div>
           </div>
         </div>
       </div>
-      <div v-if="!success" class="self-stretch flex flex-col items-start justify-start">
+      <div v-if="!state.success" class="self-stretch flex flex-col items-start justify-start">
         <div
           class="self-stretch flex flex-row items-start justify-start gap-[22px] mq850:flex-wrap"
         >
@@ -86,13 +86,13 @@
                 v-model="formData.company"
               />
             </div>
-            <div v-if="errorCompany" class="w-full">
+            <div v-if="state.errorCompany" class="w-full">
               <p class="font-roboto text-base text-red-400">*společnost je povinná</p>
             </div>
           </div>
         </div>
       </div>
-      <div v-if="!success" class="flex flex-row items-center justify-end gap-[19px] w-full">
+      <div v-if="!state.success" class="flex flex-row items-center justify-end gap-[19px] w-full">
         <button
           class="cursor-pointer [border:none] py-7 px-[34px] bg-schemes-secondary-container shadow-[4px_6px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap z-[1] hover:bg-wheat"
         >
@@ -115,39 +115,43 @@
 </style>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 import axios from 'axios'
+import { validateEmail } from '@/helpers'
 
-const emptyMail = ref(false)
-const errorMail = ref(false)
-const errorCompany = ref(false)
-const success = ref(false)
+const state = reactive({
+  emptyMail: false,
+  errorMail: false,
+  errorCompany: false,
+  success: false
+})
+
 const formData = reactive({
   email: '',
   name: '',
   company: ''
 })
 
-function submit() {
+async function submit() {
   let error = false
   if (formData.email.length == 0) {
-    emptyMail.value = true
-    errorMail.value = false
+    state.emptyMail = true
+    state.errorMail = false
     error = true
   } else if (!validateEmail(formData.email)) {
-    emptyMail.value = false
-    errorMail.value = true
+    state.emptyMail = false
+    state.errorMail = true
     error = true
   }
   if (formData.company.length == 0) {
-    errorCompany.value = true
+    state.errorCompany = true
     error = true
   }
   if (error) {
     return
   }
 
-  success.value = true
+  state.success = true
   console.log(
     sendPostRequest(
       'https://connect.mailerlite.com/api/subscribers',
@@ -177,13 +181,5 @@ async function sendPostRequest(url: string, data: object, token: string) {
     console.error('Error submitting data:', error)
     throw error
   }
-}
-
-const validateEmail = (email: String) => {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    )
 }
 </script>

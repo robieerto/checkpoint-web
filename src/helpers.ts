@@ -3,8 +3,12 @@ async function goToPage(router: any, page: string) {
   // window.location.href = page
 }
 
-function isMobile() {
-  return window.innerWidth <= 768
+const validateEmail = (email: String) => {
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )
 }
 
-export { goToPage }
+export { goToPage, validateEmail }

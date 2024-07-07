@@ -3,7 +3,7 @@
     class="self-stretch flex flex-row items-start justify-end py-0 box-border max-w-full text-justify text-29xl text-schemes-on-primary font-roboto"
   >
     <div
-      class="flex-1 [background:linear-gradient(180deg,_#39608f,_#001c38)] flex flex-col items-end justify-start pt-[71px] px-[238px] pb-[225px] box-border gap-[213px] max-w-full mq900:gap-[53px] mq900:pt-5 mq900:px-[59px] mq900:pb-[62px] mq900:box-border mq1350:gap-[106px] mq1350:pt-[30px] mq1350:px-[119px] mq1350:pb-[95px] mq1350:box-border mq450:pb-10 mq450:box-border"
+      class="flex-1 [background:linear-gradient(180deg,_#39608f,_#001c38)] flex flex-col items-end justify-start pt-[71px] px-[238px] pb-[225px] box-border gap-[213px] max-w-full mq900:gap-[53px] mq900:pt-5 mq900:px-[20px] mq900:pb-[62px] mq900:box-border mq1350:gap-[106px] mq1350:pt-[30px] mq1350:px-[119px] mq1350:pb-[95px] mq1350:box-border mq450:pb-10 mq450:box-border"
     >
       <div
         class="w-[1400px] flex flex-row items-start justify-end py-0 px-11 box-border max-w-full mq1350:pl-[22px] mq1350:pr-[22px] mq1350:box-border"
