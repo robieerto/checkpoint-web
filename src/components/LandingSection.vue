@@ -46,7 +46,7 @@
                 </button>
                 <button
                   class="cursor-pointer [border:none] py-7 pl-[38px] pr-[30px] bg-schemes-secondary-container flex-[0.7447] flex flex-row items-start justify-start whitespace-nowrap z-[2] hover:bg-wheat"
-                  @click="() => goToPage(router, '/getInfo')"
+                  @click="() => goToPage(router, '/getInformation')"
                 >
                   <div
                     class="relative text-base tracking-[-0.25px] leading-[14px] font-roboto text-schemes-on-primary-container text-left inline-block min-w-[70px] z-[1]"

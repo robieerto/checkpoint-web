@@ -4,7 +4,7 @@
   >
     <form
       @submit.prevent="submit"
-      class="m-0 max-w-[800px] flex flex-col items-center justify-start gap-[15.5px] max-w-full"
+      class="m-0 max-w-[750px] flex flex-col items-center justify-start gap-[15.5px] max-w-full"
     >
       <div
         class="self-stretch flex flex-col items-center justify-center gap-[37px] max-w-full mq900:gap-[18px]"

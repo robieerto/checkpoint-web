@@ -57,7 +57,7 @@
             class="cursor-pointer [border:none] md:py-7 pt-[18px] pb-[17px] pl-[44px] pr-[24px] bg-schemes-secondary-container flex-[0.8298] shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap hover:bg-wheat"
             @click="
               () => {
-                goToPage(router, '/getInfo')
+                goToPage(router, '/getInformation')
                 collapseMenu()
               }
             "

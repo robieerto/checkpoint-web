@@ -13,11 +13,11 @@
         </h1>
       </div>
       <div
-        class="flex flex-1 flex-col items-start justify-start gap-[17px] text-right text-29xl mq900:mb-[40px]"
+        class="flex flex-1 flex-col items-start justify-start gap-[17px] mq900:text-left text-text-right text-29xl mq900:mb-[40px]"
       >
-        <div class="self-stretch flex flex-row items-end justify-end box-border">
+        <div class="self-stretch flex flex-row mq900:justify-start justify-end box-border">
           <div
-            class="self-stretch flex flex-row items-start justify-end py-0 pl-0 max-w-[600px] box-border"
+            class="self-stretch flex flex-row items-start mq900:justify-start justify-end py-0 pl-0 max-w-[600px] box-border"
           >
             <h1
               class="m-0 flex-1 relative text-inherit leading-[44px] font-semibold font-inherit inline-block z-[2] mq900:text-19xl mq900:leading-[35px] mq450:text-10xl mq450:leading-[26px]"

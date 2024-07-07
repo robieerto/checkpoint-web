@@ -21,7 +21,7 @@ const routes: Route[] = [
     component: Reservation
   },
   {
-    path: '/getInfo',
+    path: '/getInformation',
     name: 'GetInfo',
     component: GetInfo
   }
