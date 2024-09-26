@@ -1,29 +1,29 @@
 <template>
   <section
-    class="self-stretch flex flex-row items-start justify-end py-0 box-border max-w-full text-justify text-29xl text-schemes-on-primary font-roboto"
+    class="overflow-hidden self-stretch flex flex-row items-start justify-end py-0 box-border max-w-full text-justify text-29xl text-schemes-on-primary font-roboto"
   >
     <div
-      class="flex-1 [background:linear-gradient(180deg,_#39608f,_#001c38)] flex flex-col items-end justify-start pt-[71px] px-[238px] pb-[225px] box-border gap-[213px] max-w-full mq900:gap-[53px] mq900:pt-5 mq900:px-[20px] mq900:pb-[62px] mq900:box-border mq1350:gap-[106px] mq1350:pt-[30px] mq1350:px-[119px] mq1350:pb-[95px] mq1350:box-border mq450:pb-10 mq450:box-border"
+      class="flex-1 [background:linear-gradient(180deg,_#39608f,_#001c38)] flex flex-col items-end justify-start pt-[71px] px-[238px] pb-[150px] box-border gap-[100px] max-w-full mq900:gap-[53px] mq900:pt-5 mq900:px-[20px] mq900:pb-[62px] mq900:box-border mq1500:gap-[106px] mq1500:pt-[30px] mq1500:px-[119px] mq1500:pb-[95px] mq1500:box-border mq450:pb-10 mq450:box-border"
     >
       <div
-        class="w-[1400px] flex flex-row items-start justify-end py-0 px-11 box-border max-w-full mq1350:pl-[22px] mq1350:pr-[22px] mq1350:box-border"
+        class="w-[1400px] flex flex-row items-start justify-end py-0 px-11 box-border max-w-full mq1500:pl-[22px] mq1500:pr-[22px] mq1500:box-border"
       >
         <div
-          class="flex-1 flex flex-col items-start justify-start gap-[116px] max-w-full mq900:gap-[58px] mq450:gap-[29px]"
+          class="flex-1 flex flex-col items-start justify-start gap-[80px] max-w-full mq900:gap-[58px] mq450:gap-[29px]"
         >
           <div
-            class="w-[1277px] flex flex-row items-start justify-start py-0 px-[60px] box-border max-w-full mq1350:pl-[30px] mq1350:pr-[30px] mq1350:box-border"
+            class="w-[1277px] flex flex-row items-start justify-start py-0 px-[60px] box-border max-w-full mq1500:pl-[30px] mq1500:pr-[30px] mq1500:box-border"
           >
             <div
-              class="flex-1 flex flex-col items-start justify-start gap-[81px] max-w-full mq900:gap-[20px] mq1350:gap-[40px]"
+              class="flex-1 flex flex-col items-start justify-start gap-[40px] max-w-full mq900:gap-[20px] mq1500:gap-[40px]"
             >
               <h1
-                class="m-0 self-stretch relative text-inherit leading-[36px] italic font-semibold font-inherit z-[1] mq900:text-19xl mq900:leading-[29px] mq450:text-10xl mq450:leading-[22px]"
+                class="m-0 self-stretch relative text-inherit leading-[56px] italic font-semibold font-inherit z-[1] mq900:text-19xl mq450:text-10xl mq900:leading-[34px]"
               >
                 ...ale představte si, že by mohl existovat lepší způsob...
               </h1>
               <div
-                class="w-[1117px] relative text-5xl tracking-[-0.25px] leading-[26px] text-left inline-block max-w-full z-[1] mq450:text-lgi mq450:leading-[21px]"
+                class="w-[1117px] relative text-lgi tracking-[-0.25px] leading-[26px] text-left inline-block max-w-full z-[1] mq450:text-base mq450:leading-[21px]"
               >
                 <p class="m-0">
                   Checkpoint je softwarový nástroj pro správu úkolů, které se odehrávají ve fyzickém
@@ -35,11 +35,9 @@
             </div>
           </div>
           <div
-            class="self-stretch flex flex-row items-end justify-start gap-[115px] max-w-full text-left text-45xl mq900:gap-[57px] mq450:gap-[29px] mq1800:flex-wrap"
+            class="self-stretch flex flex-row items-end justify-start gap-[115px] max-w-full text-left mq900:gap-[57px] mq450:gap-[29px] mq1800:flex-wrap"
           >
-            <div
-              class="flex-1 flex flex-col items-start justify-start gap-[28px] min-w-[453px] max-w-full mq1350:min-w-full"
-            >
+            <div class="flex-1 flex flex-col items-start justify-start gap-[28px] max-w-full">
               <h1
                 class="m-0 self-stretch relative text-inherit leading-[56px] font-semibold font-inherit z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
               >
@@ -48,14 +46,14 @@
               <div
                 class="self-stretch flex flex-col items-start justify-start gap-[16px] max-w-full text-13xl"
               >
-                <div class="w-[664px] flex flex-col items-start justify-start gap-[6px] max-w-full">
+                <div class="flex flex-col items-start justify-start gap-[13px] max-w-full">
                   <div
-                    class="w-[369px] relative leading-[36px] font-semibold flex items-center max-w-full z-[1] mq900:text-7xl mq900:leading-[29px] mq450:text-lgi mq450:leading-[22px]"
+                    class="relative leading-[36px] font-semibold flex items-center max-w-full z-[1] mq900:text-7xl mq900:leading-[29px] mq450:text-base mq450:leading-[22px]"
                   >
                     Co je zaznamenáno, to je vykonáno
                   </div>
                   <div
-                    class="self-stretch relative text-5xl tracking-[-0.25px] leading-[26px] z-[1] mq450:text-lgi mq450:leading-[21px]"
+                    class="self-stretch relative text-lgi tracking-[-0.25px] leading-[26px] z-[1] mq450:text-base mq450:leading-[21px]"
                   >
                     <ul class="m-0 font-inherit text-inherit pl-8">
                       <li class="mb-0">
@@ -75,15 +73,15 @@
                   </div>
                 </div>
                 <div
-                  class="self-stretch flex flex-col items-start justify-start gap-[6px] max-w-full"
+                  class="self-stretch flex flex-col items-start justify-start gap-[13px] max-w-full"
                 >
                   <div
-                    class="w-[399px] relative leading-[36px] font-semibold flex items-center max-w-full z-[1] mq900:text-7xl mq900:leading-[29px] mq450:text-lgi mq450:leading-[22px]"
+                    class="min-w-[260px] relative leading-[36px] font-semibold flex items-center z-[1] mq900:text-7xl mq900:leading-[29px] mq450:text-base mq450:leading-[22px]"
                   >
                     Pomocník při plnění úkolů
                   </div>
                   <div
-                    class="self-stretch relative text-5xl tracking-[-0.25px] leading-[26px] z-[1] mq450:text-lgi mq450:leading-[21px]"
+                    class="self-stretch relative text-lgi tracking-[-0.25px] leading-[26px] z-[1] mq450:text-base mq450:leading-[21px]"
                   >
                     <ul class="m-0 font-inherit text-inherit pl-8">
                       <li class="mb-0">
@@ -104,24 +102,24 @@
               </div>
             </div>
             <div
-              class="mq900:hidden h-[591px] w-[499.9px] flex flex-col items-start justify-start min-w-[499.9px] max-w-full mq1350:min-w-full mq1800:flex-1"
+              class="h-[591px] w-[499.9px] flex flex-col items-start justify-start max-w-full mq1800:flex-1 z-[1]"
             >
               <div class="self-stretch flex flex-row items-start justify-start max-w-full z-[1]">
-                <div class="h-[527.5px] flex-1 relative max-w-full">
+                <div class="h-[527.5px] relative max-w-full">
                   <div class="absolute top-[61px] left-[0px] w-[499.9px] h-[466.5px]">
                     <img
-                      class="absolute top-[53px] left-[0px] rounded-xl w-[499.9px] h-[413.5px] object-contain"
+                      class="mq900:hidden absolute top-[53px] left-[0px] rounded-xl w-[499.9px] h-[413.5px] object-contain"
                       alt=""
                       src="/rectangle-513.svg"
                     />
                     <img
-                      class="absolute top-[0px] left-[80px] w-[419.7px] h-[308.5px] z-[1]"
+                      class="mq900:hidden absolute top-[0px] left-[80px] w-[419.7px] h-[308.5px] z-[1]"
                       alt=""
                       src="/group-4666.svg"
                     />
                   </div>
                   <img
-                    class="absolute top-[0px] left-[109px] w-[299px] h-[522px] object-contain z-[2]"
+                    class="mq900:left-[0px] mq600:left-[-75px] mq500:opacity-60 absolute top-[0px] left-[109px] w-[299px] h-[522px] object-contain z-[2]"
                     alt=""
                     src="/rectangle@2x.png"
                   />
@@ -132,51 +130,49 @@
         </div>
       </div>
       <div
-        class="w-[1429px] flex flex-col items-end justify-start gap-[138px] max-w-full text-left text-13xl mq900:gap-[34px] mq1350:gap-[69px] mq450:gap-[17px]"
+        class="flex flex-col items-end justify-start gap-[100px] max-w-full text-left text-13xl mq900:gap-[34px] mq1500:gap-[69px] mq450:gap-[17px]"
       >
         <div
-          class="self-stretch flex flex-row items-start justify-start gap-[152.1px] max-w-full mq900:gap-[38px] mq1350:gap-[76px] mq450:gap-[19px] mq1800:flex-wrap"
+          class="self-stretch flex flex-row items-start justify-start gap-[152.1px] max-w-full mq900:gap-[38px] mq1500:gap-[76px] mq450:gap-[19px] mq1800:flex-wrap"
         >
           <div
-            class="w-[499.9px] mq900:hidden flex flex-col items-start justify-start pt-24 px-0 pb-0 box-border min-w-[499.9px] max-w-full mq900:pt-[62px] mq900:box-border mq1350:min-w-full mq1800:flex-1"
+            class="w-[499.9px] flex flex-col items-start justify-start pt-24 px-0 pb-0 box-border max-w-full mq900:pt-[62px] mq900:box-border mq1800:flex-1"
           >
             <div
               class="self-stretch h-[548px] flex flex-row items-start justify-start relative z-[1]"
             >
               <div
-                class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]"
+                class="h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] mq1185:left-[-250px]"
               >
                 <img
-                  class="absolute top-[15px] left-[0px] w-[499.9px] h-[525.5px] object-contain"
+                  class="mq900:hidden absolute top-[15px] left-[0px] w-[499.9px] h-[525.5px] object-contain"
                   alt=""
                   src="/group-4670@2x.png"
                 />
                 <img
-                  class="absolute h-full top-[0px] bottom-[0px] left-[124px] max-h-full w-[293px] object-cover z-[1]"
+                  class="mq900:left-[300px] mq700:left-[170px] mq500:left-[75px] mq500:opacity-60 absolute h-full top-[0px] bottom-[0px] left-[109px] max-h-full w-[293px] object-cover z-[1]"
                   alt=""
                   src="/rectangle-2@2x.png"
                 />
               </div>
             </div>
           </div>
-          <div
-            class="flex-1 flex flex-col items-start justify-start gap-[25px] min-w-[505px] max-w-full mq1350:min-w-full"
-          >
+          <div class="flex-1 flex flex-col items-start justify-start gap-[25px]">
             <h1
-              class="m-0 w-[536px] relative text-45xl leading-[56px] font-semibold font-inherit flex items-center max-w-full z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
+              class="m-0 relative leading-[56px] font-semibold font-inherit flex items-center max-w-full z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
             >
               Kratší reakce na nečekané udalosti
             </h1>
             <div
-              class="w-[745px] flex flex-col items-start justify-start pt-0 px-0 pb-[27px] box-border gap-[1px] max-w-full"
+              class="flex flex-col items-start justify-start pt-0 px-0 pb-[27px] box-border gap-[13px] max-w-full"
             >
               <div
-                class="w-[311px] relative leading-[30px] font-semibold flex items-center z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-lgi mq450:leading-[18px]"
+                class="min-w-[311px] relative leading-[30px] font-semibold flex items-center z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-base mq450:leading-[18px]"
               >
                 Věcná a rýchla komunikace
               </div>
               <div
-                class="self-stretch relative text-5xl tracking-[-0.25px] leading-[26px] z-[1] mq450:text-lgi mq450:leading-[21px]"
+                class="self-stretch relative text-lgi tracking-[-0.25px] leading-[26px] z-[1] mq450:text-base mq450:leading-[21px]"
               >
                 <ul class="m-0 font-inherit text-inherit pl-8">
                   <li class="mb-0">
@@ -196,14 +192,14 @@
                 </ul>
               </div>
             </div>
-            <div class="self-stretch flex flex-col items-start justify-start gap-[6px]">
+            <div class="self-stretch flex flex-col items-start justify-start gap-[13px]">
               <div
-                class="w-[311px] relative leading-[30px] font-semibold flex items-center z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-lgi mq450:leading-[18px]"
+                class="relative leading-[30px] font-semibold flex items-center z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-base mq450:leading-[18px]"
               >
                 Tí správni jsou vždy informováni
               </div>
               <div
-                class="self-stretch relative text-5xl tracking-[-0.25px] leading-[26px] z-[1] mq450:text-lgi mq450:leading-[21px]"
+                class="self-stretch relative text-lgi tracking-[-0.25px] leading-[26px] z-[1] mq450:text-base mq450:leading-[21px]"
               >
                 <ul class="m-0 font-inherit text-inherit pl-8">
                   <li class="mb-0">
@@ -230,29 +226,27 @@
           </div>
         </div>
         <div
-          class="w-[1388px] flex flex-row items-start justify-end py-0 px-11 box-border max-w-full mq1350:pl-[22px] mq1350:pr-[22px] mq1350:box-border"
+          class="flex flex-row items-start justify-end py-0 px-11 box-border max-w-full mq1500:pl-[22px] mq1500:pr-[22px] mq1500:box-border"
         >
           <div
-            class="flex-1 flex flex-row items-start justify-start gap-[199px] max-w-full mq900:gap-[50px] mq1350:gap-[99px] mq450:gap-[25px] mq1800:flex-wrap"
+            class="flex-1 flex flex-row items-start justify-start gap-[199px] max-w-full mq900:gap-[50px] mq1500:gap-[99px] mq450:gap-[25px] mq1800:flex-wrap"
           >
-            <div
-              class="flex-1 flex flex-col items-start justify-start gap-[10px] min-w-[391px] max-w-full mq1350:min-w-full"
-            >
+            <div class="flex-1 flex flex-col items-start justify-start gap-[10px] max-w-full">
               <h1
-                class="m-0 self-stretch relative text-45xl leading-[56px] font-semibold font-inherit z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
+                class="m-0 self-stretch relative leading-[56px] font-semibold font-inherit z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
               >
                 Doposud nevídané informace
               </h1>
               <div
-                class="w-[567px] flex flex-col items-start justify-start pt-0 px-0 pb-[25px] box-border gap-[6px] max-w-full"
+                class="flex flex-col items-start justify-start pt-0 px-0 pb-[25px] box-border gap-[13px] max-w-full"
               >
                 <div
-                  class="w-[439px] relative leading-[30px] font-semibold flex items-center max-w-full z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-lgi mq450:leading-[18px]"
+                  class="relative leading-[30px] font-semibold flex items-center max-w-full z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-base mq450:leading-[18px]"
                 >
                   Všechny důležité informace na jednom míste
                 </div>
                 <div
-                  class="self-stretch relative text-5xl tracking-[-0.25px] leading-[26px] z-[1] mq450:text-lgi mq450:leading-[21px]"
+                  class="self-stretch relative text-lgi tracking-[-0.25px] leading-[26px] z-[1] mq450:text-base mq450:leading-[21px]"
                 >
                   <ul class="m-0 font-inherit text-inherit pl-8">
                     <li class="mb-0">
@@ -277,15 +271,15 @@
                 </div>
               </div>
               <div
-                class="w-[567px] flex flex-col items-start justify-start gap-[13px] max-w-full text-justify"
+                class="flex flex-col items-start justify-start gap-[13px] max-w-full text-justify"
               >
                 <div
-                  class="w-[311px] relative leading-[30px] font-semibold flex items-center z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-lgi mq450:leading-[18px]"
+                  class="min-w-[260px] relative leading-[30px] font-semibold flex items-center z-[1] mq900:text-7xl mq900:leading-[24px] mq450:text-base mq450:leading-[18px]"
                 >
                   Pokročilé statistiky
                 </div>
                 <div
-                  class="self-stretch relative text-5xl tracking-[-0.25px] leading-[26px] text-left z-[1] mq450:text-lgi mq450:leading-[21px]"
+                  class="self-stretch relative text-lgi tracking-[-0.25px] leading-[26px] text-left z-[1] mq450:text-base mq450:leading-[21px]"
                 >
                   <ul class="m-0 font-inherit text-inherit pl-8">
                     <li>
@@ -298,24 +292,24 @@
               </div>
             </div>
             <div
-              class="w-[499.9px] flex flex-col items-start justify-start pt-7 px-0 pb-0 box-border min-w-[499.9px] max-w-full mq1350:min-w-full mq1800:flex-1"
+              class="w-[499.9px] flex flex-col items-start justify-start pt-7 px-0 pb-0 box-border max-w-full mq1800:flex-1"
             >
-              <div class="mq900:hidden flex flex-row items-start justify-start max-w-full z-[1]">
+              <div class="flex flex-row items-start justify-start max-w-full z-[1]">
                 <div class="h-[597.5px] flex-1 relative max-w-full">
                   <div class="absolute top-[0px] left-[0px] w-full h-full">
                     <img
-                      class="absolute top-[184px] left-[0px] rounded-xl w-[499.9px] h-[413.5px] object-contain"
+                      class="mq900:hidden absolute top-[184px] left-[0px] rounded-xl w-[499.9px] h-[413.5px] object-contain"
                       alt=""
                       src="/rectangle-513.svg"
                     />
                     <img
-                      class="absolute top-[0px] left-[67.9px] w-[431.9px] h-[439.5px] z-[1]"
+                      class="mq900:hidden absolute top-[0px] left-[67.9px] w-[431.9px] h-[439.5px] z-[1]"
                       alt=""
                       src="/group-4666-1.svg"
                     />
                   </div>
                   <img
-                    class="absolute top-[47px] left-[109px] w-[299px] h-[522px] object-contain z-[2]"
+                    class="mq900:left-[0px] mq600:left-[-75px] mq500:opacity-60 absolute top-[47px] left-[109px] w-[299px] h-[522px] object-contain z-[2]"
                     alt=""
                     src="/rectangle@2x.png"
                   />

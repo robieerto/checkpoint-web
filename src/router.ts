@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Root from './pages/Root.vue'
 import Reservation from './pages/Reservation.vue'
 import GetInfo from './pages/GetInfo.vue'
+import PrivacyRules from './pages/PrivacyRules.vue'
 
 interface Route {
   path: string
@@ -24,6 +25,11 @@ const routes: Route[] = [
     path: '/getInformation',
     name: 'GetInfo',
     component: GetInfo
+  },
+  {
+    path: '/checkpoint-privacy/',
+    name: 'PrivacyRules',
+    component: PrivacyRules
   }
 ]
 

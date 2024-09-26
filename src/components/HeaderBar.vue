@@ -3,10 +3,10 @@
     class="bg-schemes-on-primary fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
   >
     <div
-      class="flex flex-wrap items-center justify-between pt-4 pb-4 mq900:px-[30px] pl-[92px] pr-[62px]"
+      class="flex flex-wrap items-center justify-between pt-4 pb-2 mq900:px-[30px] pl-[92px] pr-[62px]"
     >
       <img
-        class="cursor-pointer mq950:w-[206px] w-[406px] !m-[0] left-[-3px]"
+        class="cursor-pointer mq950:w-[206px] w-[306px] !m-[0] left-[-3px]"
         loading="lazy"
         alt=""
         src="/group-4737.svg"

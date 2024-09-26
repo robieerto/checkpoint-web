@@ -1,10 +1,10 @@
 <template>
   <section class="flex flex-col">
     <footer
-      class="bg-schemes-inverse-on-surface flex flex-col items-center justify-start pt-0 px-5 pb-[42px] box-border gap-[40px] z-[4] text-justify text-45xl text-schemes-on-primary font-roboto mq900:gap-[20px] mq900:pb-[27px]"
+      class="bg-schemes-inverse-on-surface flex flex-col items-center justify-start mt-[150px] pt-0 px-5 pb-[42px] box-border gap-[40px] z-[4] text-justify text-45xl text-schemes-on-primary font-roboto mq900:gap-[20px] mq900:pb-[27px]"
     >
       <div
-        class="w-[1133px] mt-[50px] shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-31xl bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-start justify-start pt-[23px] px-[157px] pb-[54px] box-border gap-[53.5px] max-w-full z-[6] mq900:box-border mq1350:pl-[78px] mq1350:pr-[78px] mq1350:box-border"
+        class="w-[1133px] mt-[-120px] shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-31xl bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-start justify-start pt-[23px] px-[157px] pb-[54px] box-border gap-[53.5px] max-w-full z-[6] mq900:box-border mq1350:pl-[78px] mq1350:pr-[78px] mq1350:box-border"
       >
         <h1
           class="m-0 relative text-inherit leading-[54px] font-semibold font-inherit z-[1] mq900:text-32xl mq450:text-19xl mq450:leading-[32px]"
@@ -59,21 +59,23 @@
             <div class="w-[332px] flex flex-col items-start justify-start gap-[0.5px] max-w-full">
               <div class="self-stretch flex flex-row items-start justify-center py-0 px-5">
                 <div class="flex flex-row items-end justify-start gap-[17.5px]">
-                  <img
-                    class="cursor-pointer h-[39.5px] w-[39.5px] relative z-[5]"
-                    loading="lazy"
-                    alt=""
-                    src="/mail.svg"
-                    @click="mailTo"
-                  />
-                  <div class="flex flex-col items-start justify-end pt-0 px-0 pb-[4.7px]">
+                  <a href="mailto:david@ofrules.com">
                     <img
-                      class="cursor-pointer w-[31px] h-[30px] relative overflow-hidden shrink-0 z-[5]"
+                      class="cursor-pointer h-[39.5px] w-[39.5px] relative z-[5]"
                       loading="lazy"
                       alt=""
-                      src="/social-icons.svg"
-                      @click="linkedIn"
+                      src="/mail.svg"
                     />
+                  </a>
+                  <div class="flex flex-col items-start justify-end pt-0 px-0 pb-[4.7px]">
+                    <a href="https://www.linkedin.com/company/ofrules">
+                      <img
+                        class="cursor-pointer w-[31px] h-[30px] relative overflow-hidden shrink-0 z-[5]"
+                        loading="lazy"
+                        alt=""
+                        src="/social-icons.svg"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -82,6 +84,7 @@
               >
                 Copyright © ofrules 2024
               </div>
+              <a href="/checkpoint-privacy" hidden />
             </div>
           </div>
         </div>
@@ -94,11 +97,4 @@ import { goToPage } from '../helpers'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
-
-function mailTo() {
-  window.location.href = 'mailto:david@ofrules.com'
-}
-function linkedIn() {
-  window.location.href = 'https://www.linkedin.com/company/ofrules'
-}
 </script>

@@ -89,7 +89,7 @@
       <div v-else-if="state.errorMail" class="w-full">
         <p class="font-roboto text-base text-red-400">*email je v nesprávném formátu</p>
       </div>
-      <div class="w-[279px] flex flex-col items-start justify-start">
+      <div class="flex flex-col items-start justify-start">
         <div class="flex flex-row items-start justify-start py-0 px-6">
           <div
             class="relative text-base tracking-[-0.25px] leading-[27px] font-roboto font-bold text-schemes-on-primary-container text-left z-[2]"

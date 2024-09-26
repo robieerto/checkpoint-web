@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex flex-row items-start justify-center pt-[40px] pb-[30px] pr-0 box-border max-w-full"
+    class="flex flex-row items-start justify-center pt-[40px] pb-[30px] px-6 box-border max-w-full"
   >
     <form
       @submit.prevent="submit"
-      class="m-0 max-w-[750px] flex flex-col items-center justify-start gap-[15.5px] max-w-full"
+      class="m-0 max-w-[725px] flex flex-col items-center justify-start gap-[15.5px]"
     >
       <div
         class="self-stretch flex flex-col items-center justify-center gap-[37px] max-w-full mq900:gap-[18px]"
@@ -13,7 +13,7 @@
           class="self-stretch flex flex-row items-center justify-center py-0 px-[58px] box-border max-w-full mq900:pl-[29px] mq900:pr-[29px] mq900:box-border"
         >
           <h1
-            class="m-0 flex-1 relative text-45xl font-semibold font-roboto text-material-theme-extended-deep-blue-signature-seed text-center inline-block max-w-full z-[1] mq900:text-32xl mq900:leading-[29px] mq450:text-19xl mq450:leading-[22px]"
+            class="m-0 flex-1 relative text-45xl leading-[45px] font-semibold font-roboto text-material-theme-extended-deep-blue-signature-seed text-center inline-block max-w-full z-[1] mq900:text-32xl mq450:leading-[29px] mq450:text-19xl"
           >
             Zůstaňme v kontaktu
           </h1>
@@ -81,13 +81,10 @@
             >
               <input
                 class="input-text-size [border:none] [outline:none] font-roboto text-base bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"
-                placeholder="*společnost"
+                placeholder="společnost"
                 type="text"
                 v-model="formData.company"
               />
-            </div>
-            <div v-if="state.errorCompany" class="w-full">
-              <p class="font-roboto text-base text-red-400">*společnost je povinná</p>
             </div>
           </div>
         </div>
@@ -122,7 +119,6 @@ import { validateEmail } from '@/helpers'
 const state = reactive({
   emptyMail: false,
   errorMail: false,
-  errorCompany: false,
   success: false
 })
 
@@ -141,10 +137,6 @@ async function submit() {
   } else if (!validateEmail(formData.email)) {
     state.emptyMail = false
     state.errorMail = true
-    error = true
-  }
-  if (formData.company.length == 0) {
-    state.errorCompany = true
     error = true
   }
   if (error) {

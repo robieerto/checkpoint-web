@@ -8,9 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     BenefitsSection: typeof import('./src/components/BenefitsSection.vue')['default']
-    BenefitTwoContent: typeof import('./src/components/BenefitTwoContent.vue')['default']
     BotherSection: typeof import('./src/components/BotherSection.vue')['default']
-    BotherSectionInitial: typeof import('./src/components/BotherSectionInitial.vue')['default']
     CaseStudySection: typeof import('./src/components/CaseStudySection.vue')['default']
     ContactLandingSection: typeof import('./src/components/ContactLandingSection.vue')['default']
     FooterSection: typeof import('./src/components/FooterSection.vue')['default']
