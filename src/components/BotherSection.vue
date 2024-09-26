@@ -1,11 +1,11 @@
 <template>
   <div
-    class="overflow-hidden self-stretch bg-schemes-on-primary flex flex-row items-start justify-start pt-[50px] px-[62px] pb-[82px] box-border gap-[317px] mq900:gap-0 mq1525:gap-[240px] z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[53px] mq900:box-border mq450:pb-[34px] mq450:box-border mq1800:flex-wrap"
+    class="overflow-hidden bg-schemes-on-primary max-w-full flex flex-row items-start justify-start pt-[30px] px-[152px] mq1350:px-[46px] pb-[82px] box-border gap-[110px] mq900:gap-0 z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[53px] mq900:box-border mq450:pb-[34px] mq450:box-border mq1800:flex-wrap"
   >
     <div
-      class="flex flex-col items-start justify-start gap-[240px] mq1185:gap-[60px] mq1800:flex-1"
+      class="max-w-[750px] flex flex-col items-start justify-start gap-[240px] mq1185:gap-[150px] mq900:gap-[60px] mq1800:flex-1"
     >
-      <div class="self-stretch flex flex-row items-start">
+      <div class="self-stretch flex flex-row items-start justify-start">
         <h1
           class="m-0 relative text-inherit leading-[59px] font-semibold font-inherit z-[2] mq900:text-32xl mq900:leading-[47px] mq450:text-19xl mq450:leading-[35px]"
         >
@@ -45,10 +45,10 @@
       </div>
     </div>
     <div
-      class="flex flex-col items-start justify-start pt-[97px] px-0 pb-0 box-border text-29xl mq1185:pt-[0px] mq900:box-border mq900:min-w-full mq1800:flex-1"
+      class="max-w-[750px] flex flex-col items-start justify-start pt-[97px] px-0 pb-0 box-border text-29xl mq1185:pt-[0px] mq900:box-border mq900:min-w-full mq1800:flex-1"
     >
       <div
-        class="self-stretch flex flex-col items-start justify-start gap-[157px] mq900:gap-[78px] mq450:gap-[39px]"
+        class="self-stretch flex flex-col items-start justify-start gap-[280px] mq900:gap-[78px] mq450:gap-[39px]"
       >
         <div
           class="flex flex-col items-start justify-start gap-[43px] mq900:gap-[21px] mq900:mb-[40px]"

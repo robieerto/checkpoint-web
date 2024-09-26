@@ -1,7 +1,7 @@
 <template>
   <form
     @submit.prevent="submitForm"
-    class="m-0 shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-11xl bg-schemes-inverse-on-surface flex flex-col items-center justify-start pt-[67px] px-[101px] pb-[40px] box-border gap-[25px] min-w-[793px] max-w-full z-[1] mq850:pt-11 mq850:px-[50px] mq850:pb-10 mq850:box-border mq1225:min-w-full mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq1525:flex-1"
+    class="m-0 shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-medium bg-schemes-inverse-on-surface flex flex-col items-center justify-start pt-[67px] px-[101px] pb-[40px] box-border gap-[25px] min-w-[793px] max-w-full z-[1] mq850:pt-11 mq850:px-[50px] mq850:pb-10 mq850:box-border mq1225:min-w-full mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq1525:flex-1"
   >
     <h1
       v-if="state.success"
@@ -21,107 +21,73 @@
           class="self-stretch flex flex-row items-start justify-start gap-[22px] mq850:flex-wrap"
         >
           <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
-            <div class="self-stretch flex flex-row items-start justify-start py-0 pr-7 pl-6">
-              <div
-                class="flex-1 relative text-base tracking-[-0.25px] font-roboto font-bold text-schemes-on-primary-container text-left z-[2]"
-              >
-                *jméno
-              </div>
-            </div>
             <input
-              class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
+              class="input-text-size [border:none] [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
               type="text"
+              placeholder="*Jméno a společnost"
               v-model="formData.name"
             />
             <div v-if="state.emptyName" class="w-full">
-              <p class="font-roboto text-base text-red-400">*jméno je povinní</p>
+              <p class="font-roboto mb-0 text-2xl text-red-400">*Jméno a společnost je povinní</p>
             </div>
-          </div>
-          <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
-            <div class="self-stretch flex flex-row items-start justify-start py-0 pl-6">
-              <div
-                class="flex-1 relative text-base tracking-[-0.25px] font-roboto font-bold text-schemes-on-primary-container text-left z-[2]"
-              >
-                název hotela (společnost)
-              </div>
-            </div>
-            <input
-              class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
-              type="text"
-              v-model="formData.company"
-            />
           </div>
         </div>
       </div>
       <div class="self-stretch flex flex-row items-start justify-start gap-[22px] mq850:flex-wrap">
         <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
-          <div class="self-stretch flex flex-row items-start justify-start py-0 pr-7 pl-6">
-            <div
-              class="flex-1 relative text-base tracking-[-0.25px] font-roboto font-bold text-schemes-on-primary-container text-left z-[2]"
-            >
-              *mail
-            </div>
-          </div>
           <input
-            class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
+            class="input-text-size [border:none] [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
             type="text"
+            placeholder="*Email"
             v-model="formData.email"
           />
         </div>
+      </div>
+      <div class="self-stretch flex flex-row items-start justify-start gap-[22px] mq850:flex-wrap">
         <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
-          <div class="self-stretch flex flex-row items-start justify-start py-0 pr-7 pl-6">
-            <div
-              class="flex-1 relative text-base tracking-[-0.25px] font-roboto font-bold text-schemes-on-primary-container text-left z-[2]"
-            >
-              *telefonní číslo
-            </div>
-          </div>
           <input
-            class="input-text-size [border:none] [outline:none] bg-gainsboro self-stretch h-14 relative rounded-xl min-w-[167px] z-[2]"
+            class="input-text-size [border:none] [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
             type="text"
+            placeholder="*Telefonní číslo"
             v-model="formData.phone"
           />
         </div>
       </div>
       <div v-if="state.emptyMailOrPhone" class="w-full">
-        <p class="font-roboto text-base text-red-400">*email nebo telefón jsou povinní</p>
+        <p class="font-roboto my-0 text-2xl text-red-400">
+          *Email nebo telefonní čislo jsou povinní
+        </p>
       </div>
       <div v-else-if="state.errorMail" class="w-full">
-        <p class="font-roboto text-base text-red-400">*email je v nesprávném formátu</p>
+        <p class="font-roboto my-0 text-2xl text-red-400">*Email je v nesprávném formátu</p>
       </div>
       <div class="flex flex-col items-start justify-start">
-        <div class="flex flex-row items-start justify-start py-0 px-6">
-          <div
-            class="relative text-base tracking-[-0.25px] leading-[27px] font-roboto font-bold text-schemes-on-primary-container text-left z-[2]"
-          >
-            zpráva
-          </div>
-        </div>
         <textarea
-          class="pt-4 input-text-size [border:none] bg-gainsboro self-stretch h-[141px] w-auto [outline:none] resize-none relative rounded-xl z-[2]"
-          rows="7"
-          cols="21"
+          class="pt-4 input-text-size font-roboto [border:none] self-stretch h-[112px] w-auto [outline:none] resize-none relative rounded-medium z-[2]"
+          placeholder="Zpráva"
           v-model="formData.message"
         />
       </div>
     </div>
-    <button
-      v-if="!state.success && !state.fail"
-      class="cursor-pointer [border:none] py-7 pr-[45px] pl-[46px] bg-material-theme-extended-deep-blue-signature-seed flex flex-row items-start justify-start z-[2] hover:bg-steelblue"
-    >
-      <div class="h-[70px] w-[146px] relative bg-schemes-secondary-container-100 hidden" />
-      <div
-        class="relative text-base tracking-[-0.25px] leading-[14px] font-roboto text-material-theme-white text-left inline-block min-w-[55px] z-[1]"
+    <div class="w-full flex justify-end">
+      <button
+        v-if="!state.success && !state.fail"
+        class="cursor-pointer [border:none] rounded-medium py-[12px] px-[62px] mq450:px-[26px] bg-material-theme-extended-deep-blue-signature-light-color-container hover:bg-lightsteelblue"
       >
-        Odeslat
-      </div>
-    </button>
+        <div class="h-[70px] w-[146px] relative bg-schemes-secondary-container-100 hidden" />
+        <div
+          class="flex-1 text-2xl font-semibold tracking-[0.2px] relative text-schemes-on-primary-container text-center z-[1]"
+        >
+          Odeslat
+        </div>
+      </button>
+    </div>
   </form>
 </template>
 
 <style scoped>
 .input-text-size {
-  font-size: 20px;
+  font-size: 16px;
   padding-left: 1rem;
   padding-right: 1rem;
 }

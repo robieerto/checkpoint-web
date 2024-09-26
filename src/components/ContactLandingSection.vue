@@ -7,13 +7,13 @@
       class="m-0 max-w-[725px] flex flex-col items-center justify-start gap-[15.5px]"
     >
       <div
-        class="self-stretch flex flex-col items-center justify-center gap-[37px] max-w-full mq900:gap-[18px]"
+        class="self-stretch flex flex-col items-center justify-center gap-[10px] max-w-full mq900:gap-[18px]"
       >
         <div
           class="self-stretch flex flex-row items-center justify-center py-0 px-[58px] box-border max-w-full mq900:pl-[29px] mq900:pr-[29px] mq900:box-border"
         >
           <h1
-            class="m-0 flex-1 relative text-45xl leading-[45px] font-semibold font-roboto text-material-theme-extended-deep-blue-signature-seed text-center inline-block max-w-full z-[1] mq900:text-32xl mq450:leading-[29px] mq450:text-19xl"
+            class="m-0 flex-1 relative text-29xl leading-[36px] font-semibold font-roboto text-material-theme-extended-deep-blue-signature-seed text-center inline-block max-w-full z-[1] mq900:text-32xl mq450:leading-[29px] mq450:text-19xl"
           >
             Zůstaňme v kontaktu
           </h1>
@@ -41,20 +41,20 @@
         >
           <div class="flex-1 flex flex-col items-center justify-center gap-[5px] min-w-[181px]">
             <div
-              class="box-border row flex flex-row items-start justify-start py-[23px] px-[27px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
+              class="box-border row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
             >
               <input
                 class="input-text-size [border:none] [outline:none] font-roboto text-base bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"
-                placeholder="*email"
+                placeholder="*Email"
                 type="text"
                 v-model="formData.email"
               />
             </div>
             <div v-if="state.emptyMail" class="w-full">
-              <p class="font-roboto text-base text-red-400">*email je povinný</p>
+              <p class="font-roboto text-red-400">*Email je povinný</p>
             </div>
             <div v-else-if="state.errorMail" class="w-full">
-              <p class="font-roboto text-base text-red-400">*email je v nesprávném formátu</p>
+              <p class="font-roboto text-red-400">*Email je v nesprávném formátu</p>
             </div>
           </div>
         </div>
@@ -65,11 +65,11 @@
         >
           <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
             <div
-              class="box-border row flex flex-row items-start justify-start py-[23px] px-[27px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
+              class="box-border row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
             >
               <input
-                class="input-text-size [border:none] [outline:none] font-roboto text-base bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"
-                placeholder="jméno"
+                class="input-text-size [border:none] [outline:none] font-roboto bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"
+                placeholder="Jméno"
                 type="text"
                 v-model="formData.name"
               />
@@ -77,11 +77,11 @@
           </div>
           <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
             <div
-              class="box-border row flex flex-row items-start justify-start py-[23px] px-[27px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
+              class="box-border row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
             >
               <input
                 class="input-text-size [border:none] [outline:none] font-roboto text-base bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"
-                placeholder="společnost"
+                placeholder="Společnost"
                 type="text"
                 v-model="formData.company"
               />
@@ -91,10 +91,10 @@
       </div>
       <div v-if="!state.success" class="flex flex-row items-center justify-end gap-[19px] w-full">
         <button
-          class="cursor-pointer [border:none] py-7 px-[34px] bg-schemes-secondary-container shadow-[4px_6px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap z-[1] hover:bg-wheat"
+          class="cursor-pointer [border:none] rounded-medium py-[12px] px-[26px] bg-schemes-secondary-container hover:bg-wheat"
         >
           <div
-            class="relative text-base tracking-[-0.25px] font-roboto text-schemes-on-primary-container text-left inline-block min-w-[77px] z-[1]"
+            class="flex-1 text-2xl font-semibold tracking-[0.2px] relative text-schemes-on-primary-container text-center z-[1]"
           >
             Přihlásit se
           </div>
@@ -107,7 +107,7 @@
 <style scoped>
 .input-text-size {
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
 }
 </style>
 

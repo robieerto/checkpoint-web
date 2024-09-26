@@ -3,27 +3,32 @@
     class="overflow-hidden self-stretch flex flex-row items-start justify-end py-0 box-border max-w-full text-justify text-29xl text-schemes-on-primary font-roboto"
   >
     <div
-      class="flex-1 [background:linear-gradient(180deg,_#39608f,_#001c38)] flex flex-col items-end justify-start pt-[71px] px-[238px] pb-[150px] box-border gap-[100px] max-w-full mq900:gap-[53px] mq900:pt-5 mq900:px-[20px] mq900:pb-[62px] mq900:box-border mq1500:gap-[106px] mq1500:pt-[30px] mq1500:px-[119px] mq1500:pb-[95px] mq1500:box-border mq450:pb-10 mq450:box-border"
+      class="flex-1 [background:linear-gradient(180deg,_#39608f,_#001c38)] flex flex-col items-center justify-start pt-[71px] px-[238px] pb-[150px] box-border gap-[100px] max-w-full mq900:gap-[53px] mq900:pt-5 mq900:px-[20px] mq900:pb-[62px] mq900:box-border mq1500:gap-[106px] mq1500:pt-[30px] mq1500:px-[119px] mq1500:pb-[95px] mq1500:box-border mq450:pb-10 mq450:box-border"
     >
       <div
-        class="w-[1400px] flex flex-row items-start justify-end py-0 px-11 box-border max-w-full mq1500:pl-[22px] mq1500:pr-[22px] mq1500:box-border"
+        class="flex flex-row items-start justify-end py-0 px-11 box-border max-w-full mq1500:pl-[22px] mq1500:pr-[22px] mq1500:box-border"
       >
         <div
           class="flex-1 flex flex-col items-start justify-start gap-[80px] max-w-full mq900:gap-[58px] mq450:gap-[29px]"
         >
           <div
-            class="w-[1277px] flex flex-row items-start justify-start py-0 px-[60px] box-border max-w-full mq1500:pl-[30px] mq1500:pr-[30px] mq1500:box-border"
+            class="flex flex-row items-start justify-start py-0 px-[60px] box-border mq1500:pl-[30px] mq1500:pr-[30px] mq1500:box-border"
           >
             <div
-              class="flex-1 flex flex-col items-start justify-start gap-[40px] max-w-full mq900:gap-[20px] mq1500:gap-[40px]"
+              class="flex-1 flex flex-col items-start justify-start gap-[40px] mq900:gap-[20px] mq1500:gap-[40px]"
             >
-              <h1
-                class="m-0 self-stretch relative text-inherit leading-[56px] italic font-semibold font-inherit z-[1] mq900:text-19xl mq450:text-10xl mq900:leading-[34px]"
-              >
-                ...ale představte si, že by mohl existovat lepší způsob...
-              </h1>
               <div
-                class="w-[1117px] relative text-lgi tracking-[-0.25px] leading-[26px] text-left inline-block max-w-full z-[1] mq450:text-base mq450:leading-[21px]"
+                class="relative tracking-[-0.25px] leading-[26px] text-left inline-block max-w-full z-[1]"
+              >
+                <h1
+                  class="m-0 relative text-inherit leading-[56px] italic max-w-full font-semibold font-inherit z-[1] mq900:text-19xl mq450:text-10xl mq900:leading-[34px]"
+                >
+                  ...ale představte si, že by mohl existovat lepší způsob...
+                </h1>
+              </div>
+
+              <div
+                class="relative text-lgi tracking-[-0.25px] leading-[26px] text-left inline-block max-w-full z-[1] mq450:text-base mq450:leading-[21px]"
               >
                 <p class="m-0">
                   Checkpoint je softwarový nástroj pro správu úkolů, které se odehrávají ve fyzickém
@@ -39,7 +44,7 @@
           >
             <div class="flex-1 flex flex-col items-start justify-start gap-[28px] max-w-full">
               <h1
-                class="m-0 self-stretch relative text-inherit leading-[56px] font-semibold font-inherit z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
+                class="m-0 self-stretch relative text-inherit leading-[38px] font-semibold font-inherit z-[1] mq900:text-29xl mq450:text-19xl mq450:leading-[34px]"
               >
                 Přehled toho důležitého kdykoliv na dosah
               </h1>
@@ -159,7 +164,7 @@
           </div>
           <div class="flex-1 flex flex-col items-start justify-start gap-[25px]">
             <h1
-              class="m-0 relative leading-[56px] font-semibold font-inherit flex items-center max-w-full z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
+              class="m-0 relative leading-[38px] font-semibold font-inherit flex items-center max-w-full z-[1] mq900:text-29xl mq900:leading-[36px] mq450:text-19xl mq450:leading-[34px]"
             >
               Kratší reakce na nečekané udalosti
             </h1>
@@ -233,7 +238,7 @@
           >
             <div class="flex-1 flex flex-col items-start justify-start gap-[10px] max-w-full">
               <h1
-                class="m-0 self-stretch relative leading-[56px] font-semibold font-inherit z-[1] mq900:text-32xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
+                class="m-0 self-stretch relative leading-[36px] font-semibold font-inherit z-[1] mq900:text-29xl mq900:leading-[45px] mq450:text-19xl mq450:leading-[34px]"
               >
                 Doposud nevídané informace
               </h1>

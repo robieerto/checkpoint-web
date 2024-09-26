@@ -3,13 +3,13 @@
     class="bg-schemes-on-primary fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
   >
     <div
-      class="flex flex-wrap items-center justify-between pt-4 pb-2 mq900:px-[30px] pl-[92px] pr-[62px]"
+      class="flex flex-wrap items-center justify-between pt-4 pb-2 mq900:px-[30px] pl-[142px] pr-[142px]"
     >
       <img
         class="cursor-pointer mq950:w-[206px] w-[306px] !m-[0] left-[-3px]"
         loading="lazy"
         alt=""
-        src="/group-4737.svg"
+        src="/group-4834.png"
         @click="
           () => {
             goToPage(router, '/')
@@ -22,7 +22,7 @@
         id="navbar-toggle"
         data-collapse-toggle="navbar-sticky"
         type="button"
-        class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden bg-schemes-on-primary"
+        class="cursor-pointer inline-flex items-end p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden bg-schemes-on-primary"
         aria-controls="navbar-sticky"
         aria-expanded="false"
         @click="isMenuExpanded = !isMenuExpanded"
@@ -37,35 +37,27 @@
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-sticky">
         <div
-          class="flex flex-col items-center my-5 md:flex-row md:item-start md:mt-0 justify-end max-w-full gap-[29px]"
+          class="flex flex-col items-center md:flex-row md:item-start my-3 md:mt-0 justify-end max-w-full gap-[19px]"
         >
           <button
-            class="cursor-pointer [border:none] pt-[18px] px-[26px] pb-[17px] bg-material-theme-extended-deep-blue-signature-light-color-container flex-1 shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start hover:bg-lightsteelblue"
-            @click="
-              () => {
-                goToPage(router, '/reservation')
-                collapseMenu()
-              }
-            "
+            class="cursor-pointer [border:none] rounded-medium py-[12px] px-[42px] mq450:px-[26px] bg-material-theme-extended-deep-blue-signature-light-color-container hover:bg-lightsteelblue"
+            @click="() => goToPage(router, '/reservation')"
           >
-            <a
-              class="[text-decoration:none] flex-1 relative text-base tracking-[-0.25px] leading-[17px] font-roboto text-schemes-on-primary-container text-center z-[1]"
-              >Rezervovat ukázku</a
+            <div
+              class="flex-1 text-2xl font-semibold tracking-[0.2px] relative text-schemes-on-primary-container text-center z-[1]"
             >
+              Rezervovat ukázku
+            </div>
           </button>
           <button
-            class="cursor-pointer [border:none] md:py-7 pt-[18px] pb-[17px] pl-[44px] pr-[24px] bg-schemes-secondary-container flex-[0.8298] shadow-[7px_9px_4px_rgba(0,_0,_0,_0.25)] flex flex-row items-start justify-start whitespace-nowrap hover:bg-wheat"
-            @click="
-              () => {
-                goToPage(router, '/getInformation')
-                collapseMenu()
-              }
-            "
+            class="cursor-pointer [border:none] rounded-medium py-[12px] px-[42px] mq450:px-[26px] bg-schemes-secondary-container hover:bg-wheat"
+            @click="() => goToPage(router, '/getInformation')"
           >
-            <a
-              class="[text-decoration:none] relative text-base tracking-[-0.25px] leading-[14px] font-roboto text-schemes-on-primary-container text-left inline-block min-w-[77px] z-[1]"
-              >Zjistit více</a
+            <div
+              class="flex-1 text-2xl font-semibold tracking-[0.2px] relative text-schemes-on-primary-container text-center z-[1]"
             >
+              Zjistit více
+            </div>
           </button>
         </div>
       </div>

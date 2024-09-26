@@ -30,7 +30,8 @@ export default {
       borderRadius: {
         '31xl': '50px',
         '11xl': '30px',
-        xl: '20px'
+        xl: '20px',
+        medium: '5px'
       },
       screens: {
         mq1800: {
@@ -81,19 +82,21 @@ export default {
       }
     },
     fontSize: {
-      '9xl': '28px',
-      '3xl': '22px',
-      '13xl': '32px',
-      '7xl': '26px',
-      lgi: '19px',
-      base: '16px',
+      '9xl': '20px',
+      '3xl': '20px',
+      '13xl': '20px',
+      '7xl': '20px',
+      lgi: '20px',
+      base: '20px',
       xl: '20px',
-      '45xl': '64px',
-      '32xl': '51px',
-      '19xl': '38px',
-      '29xl': '48px',
-      '10xl': '29px',
-      '5xl': '24px',
+      '45xl': '48px',
+      '32xl': '48px',
+      '19xl': '36px',
+      '29xl': '36px',
+      '10xl': '20px',
+      '5xl': '20px',
+      '2xl': '16px',
+      '1xl': '14px',
       inherit: 'inherit'
     }
   },

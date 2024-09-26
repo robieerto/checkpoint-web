@@ -1,12 +1,12 @@
 <template>
   <div
-    class="w-full relative flex flex-col items-start justify-start leading-[normal] tracking-[normal]"
+    class="w-full relative flex flex-col items-center justify-start leading-[normal] tracking-[normal]"
   >
     <LandingSection />
     <BotherSection />
     <ImmersiveSection />
     <section
-      class="self-stretch bg-schemes-on-primary flex flex-col items-center justify-start pt-[59px] pb-[39px] pr-[23px] pl-5 box-border gap-[135px] max-w-full mq900:gap-[34px] mq900:pt-[25px] mq900:pb-5 mq900:box-border mq1350:gap-[67px] mq1350:pt-[38px] mq1350:pb-[25px] mq1350:box-border mq450:gap-[17px]"
+      class="self-stretch bg-schemes-on-primary flex flex-col items-center justify-start pt-[59px] pb-[39px] pr-[23px] pl-5 box-border gap-[135px] max-w-full mq900:gap-[34px] mq900:pt-[25px] mq900:pb-3 mq900:box-border mq1350:gap-[67px] mq1350:pt-[38px] mq1350:pb[25px] mq1350:box-border mq450:gap-[17px]"
     >
       <!-- <CaseStudySection /> -->
       <ContactLandingSection />
@@ -36,8 +36,6 @@ export default defineComponent({
   name: 'RootPage',
   components: {
     LandingSection,
-    BotherSection,
-    ImmersiveSection,
     CaseStudySection,
     ContactLandingSection,
     TestimonialsSection,
