@@ -1,5 +1,5 @@
 <template>
   <HeaderBar />
-  <router-view class="mt-[90px] md:mt-[100px]" />
+  <router-view class="mt-[70px] md:mt-[95px]" />
   <FooterSection />
 </template>

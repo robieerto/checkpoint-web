@@ -1,7 +1,7 @@
 <template>
   <form
     @submit.prevent="submitForm"
-    class="m-0 shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-medium bg-schemes-inverse-on-surface flex flex-col items-center justify-start pt-[67px] px-[101px] pb-[40px] box-border gap-[25px] min-w-[793px] max-w-full z-[1] mq850:pt-11 mq850:px-[50px] mq850:pb-10 mq850:box-border mq1225:min-w-full mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq1525:flex-1"
+    class="m-0 shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-medium bg-schemes-inverse-on-surface flex flex-col items-center justify-start pt-[67px] px-[101px] pb-[40px] box-border gap-[25px] max-w-[800px] z-[1] mq850:pt-11 mq850:px-[50px] mq850:pb-10 mq850:box-border mq1225:min-w-full mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq1525:flex-1"
   >
     <h1
       v-if="state.success"

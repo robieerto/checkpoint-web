@@ -22,7 +22,7 @@
         id="navbar-toggle"
         data-collapse-toggle="navbar-sticky"
         type="button"
-        class="cursor-pointer inline-flex items-end p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden bg-schemes-on-primary"
+        class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-full md:hidden bg-schemes-on-primary"
         aria-controls="navbar-sticky"
         aria-expanded="false"
         @click="isMenuExpanded = !isMenuExpanded"
@@ -41,7 +41,12 @@
         >
           <button
             class="cursor-pointer [border:none] rounded-medium py-[12px] px-[42px] mq450:px-[26px] bg-material-theme-extended-deep-blue-signature-light-color-container hover:bg-lightsteelblue"
-            @click="() => goToPage(router, '/reservation')"
+            @click="
+              () => {
+                goToPage(router, '/reservation')
+                collapseMenu()
+              }
+            "
           >
             <div
               class="flex-1 text-2xl font-semibold tracking-[0.2px] relative text-schemes-on-primary-container text-center z-[1]"
@@ -51,7 +56,12 @@
           </button>
           <button
             class="cursor-pointer [border:none] rounded-medium py-[12px] px-[42px] mq450:px-[26px] bg-schemes-secondary-container hover:bg-wheat"
-            @click="() => goToPage(router, '/getInformation')"
+            @click="
+              () => {
+                goToPage(router, '/getInformation')
+                collapseMenu()
+              }
+            "
           >
             <div
               class="flex-1 text-2xl font-semibold tracking-[0.2px] relative text-schemes-on-primary-container text-center z-[1]"

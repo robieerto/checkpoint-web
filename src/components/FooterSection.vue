@@ -44,9 +44,13 @@
         <div class="flex flex-col items-start justify-start gap-[10px] max-w-full">
           <div class="flex flex-row items-start justify-center py-0">
             <div
-              class="relative leading-[36px] font-semibold z-[5] text-7xl mq900:leading-[29px] mq450:text-lgi mq450:leading-[22px]"
+              class="relative tracking-[-0.25px] leading-[26px] text-center inline-block max-w-full z-[1]"
             >
-              Dávame fyzickému světu digitálni rozměr
+              <div
+                class="relative leading-[36px] font-semibold z-[5] text-7xl mq900:leading-[29px] mq450:text-lgi mq450:leading-[22px]"
+              >
+                Dávame fyzickému světu digitálni rozměr
+              </div>
             </div>
           </div>
 

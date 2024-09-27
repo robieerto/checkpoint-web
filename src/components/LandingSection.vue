@@ -52,7 +52,7 @@
                 </button>
               </div>
             </div>
-            <div class="relative text-2xl tracking-[-0.25px] pb-[38px] z-[2]">
+            <div class="relative text-2xl tracking-[-0.25px] pb-[38px] mq900:pb-[18px] z-[2]">
               *rezervujte si ukázku bez jakýchkoli závazků
             </div>
           </div>

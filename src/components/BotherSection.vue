@@ -92,7 +92,7 @@
                 src="/vector-5.svg"
               />
               <h1
-                class="m-0 h-[86px] flex-1 relative text-inherit leading-[45px] font-semibold font-inherit flex items-center z-[3] mq900:text-19xl mq900:leading-[36px] mq450:text-10xl mq450:leading-[27px]"
+                class="m-0 h-[86px] mq900:h-[27px] flex-1 relative text-inherit leading-[45px] font-semibold font-inherit flex items-center z-[3] mq900:text-19xl mq900:leading-[36px] mq450:text-10xl mq450:leading-[27px]"
               >
                 Nedůstatek důležitých informací
               </h1>
