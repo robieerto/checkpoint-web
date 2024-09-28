@@ -1,21 +1,21 @@
 <template>
   <div
-    class="overflow-hidden bg-schemes-on-primary max-w-full flex flex-row items-start justify-start pt-[30px] px-[152px] mq1350:px-[46px] pb-[82px] box-border gap-[110px] mq900:gap-0 z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[53px] mq900:box-border mq450:pb-[34px] mq450:box-border mq1800:flex-wrap"
+    class="overflow-hidden mqMobile:bother-background max-w-full flex flex-row items-start justify-start pt-[30px] px-[152px] mq1350:px-[46px] pb-[82px] box-border gap-[110px] mq900:gap-0 z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[53px] mq900:box-border mq450:pb-[34px] mq450:box-border mq1800:flex-wrap"
   >
     <div
-      class="max-w-[750px] flex flex-col items-start justify-start gap-[240px] mq1185:gap-[150px] mq900:gap-[60px] mq1800:flex-1"
+      class="max-w-[550px] flex flex-col items-start justify-start gap-[155px] mq1185:gap-[150px] mq900:gap-[60px] mq1800:flex-1"
     >
       <div class="self-stretch flex flex-row items-start justify-start">
         <h1
-          class="m-0 relative text-inherit leading-[59px] font-semibold font-inherit z-[2] mq900:text-32xl mq900:leading-[47px] mq450:text-19xl mq450:leading-[35px]"
+          class="m-0 relative italic leading-[59px] font-semibold text-19xl z-[2] mq900:text-32xl mq900:leading-[47px] mq450:text-19xl mq450:leading-[35px]"
         >
-          Víme, co Vás trápí
+          Víme, co Vás trápí...
         </h1>
       </div>
       <div
-        class="flex flex-1 flex-col items-start justify-start gap-[17px] mq900:text-left text-text-right text-29xl mq900:mb-[40px]"
+        class="flex flex-1 flex-col items-start justify-start gap-[17px] mq900:text-left text-left text-29xl mq900:mb-[40px]"
       >
-        <div class="self-stretch flex flex-row mq900:justify-start justify-end box-border">
+        <div class="self-stretch flex flex-row mq900:justify-start justify-start box-border">
           <div
             class="self-stretch flex flex-row items-start mq900:justify-start justify-end py-0 pl-0 max-w-[600px] box-border"
           >
@@ -45,17 +45,17 @@
       </div>
     </div>
     <div
-      class="max-w-[750px] flex flex-col items-start justify-start pt-[97px] px-0 pb-0 box-border text-29xl mq1185:pt-[0px] mq900:box-border mq900:min-w-full mq1800:flex-1"
+      class="max-w-[550px] flex flex-col items-start justify-start pt-[97px] px-0 pb-0 box-border mq1185:pt-[0px] mq900:box-border mq900:min-w-full mq1800:flex-1"
     >
       <div
-        class="self-stretch flex flex-col items-start justify-start gap-[280px] mq900:gap-[78px] mq450:gap-[39px]"
+        class="self-stretch flex flex-col items-start justify-start gap-[126px] mq900:gap-[78px] mq450:gap-[39px]"
       >
         <div
           class="flex flex-col items-start justify-start gap-[43px] mq900:gap-[21px] mq900:mb-[40px]"
         >
           <div class="flex flex-row items-start justify-start py-0 px-1 box-border">
             <h1
-              class="m-0 flex-1 relative text-inherit leading-[44px] font-semibold font-inherit inline-block z-[2] mq900:text-19xl mq900:leading-[35px] mq450:text-10xl mq450:leading-[26px]"
+              class="m-0 flex-1 relative leading-[44px] font-semibold inline-block z-[2] text-29xl mq900:leading-[35px] mq450:text-10xl mq450:leading-[26px]"
             >
               Příliš dlouhá reakční doba
             </h1>
@@ -79,14 +79,14 @@
           </div>
         </div>
         <div
-          class="self-stretch flex flex-row items-start justify-start py-0 pr-0 pl-1 box-border text-29xl"
+          class="self-stretch flex flex-row items-start justify-start py-0 pr-0 box-border text-29xl"
         >
           <div
             class="flex-1 flex flex-col items-start justify-start gap-[37px] mq900:gap-[18px] mq900:mb-[80px]"
           >
             <div class="flex flex-row items-start justify-start relative">
               <img
-                class="mq900:hidden h-[59.5px] w-[358.5px] absolute !m-[0] mq1350:bottom-[-40.5px] bottom-[-20.5px] left-[-78px] object-contain z-[2]"
+                class="mq900:hidden h-[59.5px] w-[358.5px] absolute !m-[0] mq1350:bottom-[-40.5px] bottom-[-10.5px] left-[-77px] object-contain z-[2]"
                 loading="lazy"
                 alt=""
                 src="/vector-5.svg"
@@ -110,6 +110,17 @@
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.bother-background {
+  background-image: url('public/backgroundshapes1.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+</style>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 

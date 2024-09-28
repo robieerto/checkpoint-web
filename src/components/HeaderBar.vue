@@ -1,9 +1,9 @@
 <template>
   <nav
-    class="bg-schemes-on-primary fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    class="bg-schemes-on-primary fixed w-full flex justify-center z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
   >
     <div
-      class="flex flex-wrap items-center justify-between pt-4 pb-2 mq900:px-[30px] pl-[142px] pr-[142px]"
+      class="flex flex-wrap items-center w-full justify-between pt-4 pb-2 mq900:px-[30px] pl-[142px] pr-[142px] max-w-[1500px]"
     >
       <img
         class="cursor-pointer mq950:w-[206px] w-[306px] !m-[0] left-[-3px]"

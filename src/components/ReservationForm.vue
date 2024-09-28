@@ -1,7 +1,7 @@
 <template>
   <form
     @submit.prevent="submitForm"
-    class="m-0 shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-medium bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-center justify-start pt-[67px] px-[101px] pb-[40px] box-border gap-[25px] max-w-[800px] z-[1] mq850:pt-11 mq850:px-[50px] mq850:pb-10 mq850:box-border mq1225:min-w-full mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq1525:flex-1"
+    class="m-0 shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] mt-[54px] mq1225:mt-[20px] rounded-medium bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-center justify-start pt-[67px] px-[51px] pb-[40px] box-border gap-[25px] max-w-[600px] z-[1] mq850:pt-11 mq850:px-[50px] mq850:pb-10 mq850:box-border mq1225:min-w-full mq450:gap-[22px] mq450:pl-5 mq450:pr-5 mq450:box-border mq1525:flex-1"
   >
     <h1
       v-if="state.success"
@@ -22,7 +22,7 @@
         >
           <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
             <input
-              class="input-text-size [border:none] [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
+              class="input-text-size box-border border-[1px] border-solid border-material-theme-black [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
               type="text"
               placeholder="*Jméno a společnost"
               v-model="formData.name"
@@ -36,7 +36,7 @@
       <div class="self-stretch flex flex-row items-start justify-start gap-[22px] mq850:flex-wrap">
         <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
           <input
-            class="input-text-size [border:none] [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
+            class="input-text-size box-border border-[1px] border-solid border-material-theme-black [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
             type="text"
             placeholder="*Email"
             v-model="formData.email"
@@ -46,7 +46,7 @@
       <div class="self-stretch flex flex-row items-start justify-start gap-[22px] mq850:flex-wrap">
         <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
           <input
-            class="input-text-size [border:none] [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
+            class="input-text-size box-border border-[1px] border-solid border-material-theme-black [outline:none] self-stretch h-14 relative rounded-medium min-w-[167px] z-[2]"
             type="text"
             placeholder="*Telefonní číslo"
             v-model="formData.phone"
@@ -63,7 +63,7 @@
       </div>
       <div class="flex flex-col items-start justify-start">
         <textarea
-          class="pt-4 input-text-size font-roboto [border:none] self-stretch h-[112px] w-auto [outline:none] resize-none relative rounded-medium z-[2]"
+          class="pt-4 input-text-size font-roboto box-border border-[1px] border-solid border-material-theme-black self-stretch h-[112px] w-auto [outline:none] resize-none relative rounded-medium z-[2]"
           placeholder="Poznámka (cokoliv důležité)"
           v-model="formData.message"
         />

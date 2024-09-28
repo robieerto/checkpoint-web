@@ -83,7 +83,6 @@ export default {
     },
     fontSize: {
       '9xl': '20px',
-      '3xl': '20px',
       '13xl': '20px',
       '7xl': '20px',
       lgi: '20px',
@@ -95,6 +94,7 @@ export default {
       '29xl': '36px',
       '10xl': '20px',
       '5xl': '20px',
+      '3xl': '16px',
       '2xl': '16px',
       '1xl': '14px',
       inherit: 'inherit'

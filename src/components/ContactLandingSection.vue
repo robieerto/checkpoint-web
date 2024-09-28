@@ -41,7 +41,7 @@
         >
           <div class="flex-1 flex flex-col items-center justify-center gap-[5px] min-w-[181px]">
             <div
-              class="box-border row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
+              class="box-border rounded-medium row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
             >
               <input
                 class="input-text-size [border:none] [outline:none] font-roboto text-base bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"
@@ -65,7 +65,7 @@
         >
           <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
             <div
-              class="box-border row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
+              class="box-border rounded-medium row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
             >
               <input
                 class="input-text-size [border:none] [outline:none] font-roboto bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"
@@ -77,7 +77,7 @@
           </div>
           <div class="flex-1 flex flex-col items-start justify-start gap-[5px] min-w-[181px]">
             <div
-              class="box-border row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
+              class="box-border rounded-medium row flex flex-row items-start justify-start py-[13px] px-[17px] w-full z-[1] border-[1px] border-solid border-material-theme-black"
             >
               <input
                 class="input-text-size [border:none] [outline:none] font-roboto text-base bg-[transparent] relative text-material-theme-black text-left flex items-center p-0 z-[2]"

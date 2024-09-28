@@ -7,7 +7,7 @@
     >
       <div class="flex-1 flex flex-col gap-[47px] max-w-[1000px] mq900:gap-[23px]">
         <div
-          class="shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-medium bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-start justify-start pt-12 px-[119px] pb-[7px] box-border gap-[40px] max-w-full z-[1] text-left text-45xl text-schemes-on-primary mq900:gap-[23px] mq900:pt-[31px] mq900:px-[29px] mq900:pb-5 mq900:box-border mq1350:gap-[46px] mq1350:pl-[59px] mq1350:pr-[59px] mq1350:box-border"
+          class="shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] max-w-[1620px] rounded-medium bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-start justify-start pt-12 px-[119px] pb-[7px] box-border gap-[40px] max-w-full z-[1] text-left text-45xl text-schemes-on-primary mq900:gap-[23px] mq900:pt-[31px] mq900:px-[29px] mq900:pb-5 mq900:box-border mq1350:gap-[46px] mq1350:pl-[59px] mq1350:pr-[59px] mq1350:box-border"
         >
           <div class="flex flex-row py-0 px-px box-border">
             <div class="flex-1 flex flex-col gap-[43px] mq900:gap-[26px]">
@@ -16,7 +16,7 @@
               >
                 Zefektivněte řízení svého hotelu pomocí Checkpointu
               </h1>
-              <div class="relative text-5xl tracking-[-0.25px] leading-[26px] z-[2]">
+              <div class="relative text-5xl tracking-[-0.25px] z-[2]">
                 Checkpoint je chytrý software pro správu úkolů, který vám poskytne dokonalý přehled
                 o tom, co se ve vašem hotelu děje a doposud nevídané informace pro ještě lepší
                 rozhodování.
@@ -71,26 +71,26 @@
     </header>
     <div class="flex flex-row items-start justify-start py-0 px-px box-border max-w-full">
       <div
-        class="shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-medium bg-schemes-inverse-on-surface flex flex-col items-start justify-start pt-[15px] pb-[52px] max-w-full z-[1] px-[236px] box-border gap-[45px] max-w-full z-[1] mq450:px-5 mq850:px-[29px] mq925:gap-[22px] mq925:px-[93px] mq1350:px-[118px]"
+        class="shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] rounded-medium bg-schemes-inverse-on-surface flex flex-col items-start justify-start pt-[15px] pb-[52px] max-w-full z-[1] px-[206px] box-border gap-[25px] max-w-full z-[1] mq450:px-5 mq850:px-[29px] mq925:gap-[22px] mq925:px-[93px] mq1350:px-[118px]"
       >
         <div class="w-[1033px] flex flex-row items-start justify-center max-w-full">
           <h1
-            class="m-0 pt-[15px] text-32xl relative leading-[46px] font-semibold font-inherit z-[2] mq900:leading-[40px] mq450:text-19xl mq450:leading-[30px]"
+            class="m-0 pt-[15px] text-19xl relative leading-[46px] font-semibold font-inherit z-[2] mq900:leading-[40px] mq450:text-19xl mq450:leading-[30px]"
           >
             Důvěřují nám hotéliéři různých velikostí
           </h1>
         </div>
         <div
-          class="flex flex-row items-start justify-center gap-[15px] max-w-full text-left text-5xl text-material-theme-black mq900:gap-[15px] mq1350:gap-[31px] mq1350:flex-wrap"
+          class="flex flex-row items-start justify-center max-w-full text-left text-5xl text-material-theme-black mq900:gap-[15px] mq1350:gap-[31px] mq1350:flex-wrap"
         >
           <div
             class="w-[373px] flex flex-row items-start justify-start gap-[18px] max-w-full mq450:flex-wrap"
           >
             <img
-              class="w-[112px] !m-[0] rounded-full"
+              class="h-[80px] w-[80px] !m-[0] rounded-full"
               loading="lazy"
               alt=""
-              src="/male-avatar.png"
+              src="/kapka-resort.png"
             />
             <div
               class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border min-w-[158px]"
@@ -108,10 +108,10 @@
             class="w-[373px] flex flex-row items-start justify-start gap-[18px] max-w-full mq450:flex-wrap"
           >
             <img
-              class="w-[112px] !m-[0] rounded-full"
+              class="w-[80px] !m-[0] rounded-full"
               loading="lazy"
               alt=""
-              src="/female-cute-avatar.png"
+              src="/penzion-sport.jpg"
             />
             <div
               class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border min-w-[158px]"
@@ -129,10 +129,10 @@
             class="w-[373px] flex flex-row items-start justify-start gap-[18px] max-w-full mq450:flex-wrap"
           >
             <img
-              class="w-[112px] !m-[0] rounded-full"
+              class="h-[80px] w-[80px] object-cover !m-[0] rounded-full"
               loading="lazy"
               alt=""
-              src="/female-avatar.png"
+              src="/danielov-dom.png"
             />
             <div
               class="flex-1 flex flex-col items-start justify-start pt-1.5 px-0 pb-0 box-border min-w-[158px]"
