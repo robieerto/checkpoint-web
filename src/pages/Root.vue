@@ -5,6 +5,7 @@
     <LandingSection />
     <BotherSection />
     <ImmersiveSection />
+    <SmallTestimonialsSection />
     <section
       class="self-stretch bg-schemes-on-primary flex flex-col items-center justify-start pt-[59px] pb-[39px] pr-[23px] pl-5 box-border gap-[135px] max-w-full mq900:gap-[34px] mq900:pt-[25px] mq900:pb-3 mq900:box-border mq1350:gap-[67px] mq1350:pt-[38px] mq1350:pb[25px] mq1350:box-border mq450:gap-[17px]"
     >
@@ -28,7 +29,7 @@ import BotherSection from '../components/BotherSection.vue'
 import ImmersiveSection from '../components/ImmersiveSection.vue'
 import CaseStudySection from '../components/CaseStudySection.vue'
 import ContactLandingSection from '../components/ContactLandingSection.vue'
-import TestimonialsSection from '../components/TestimonialsSection.vue'
+import SmallTestimonialsSection from '../components/SmallTestimonialsSection.vue'
 import BenefitsSection from '../components/BenefitsSection.vue'
 import FooterSection from '../components/FooterSection.vue'
 
@@ -38,7 +39,7 @@ export default defineComponent({
     LandingSection,
     CaseStudySection,
     ContactLandingSection,
-    TestimonialsSection,
+    SmallTestimonialsSection,
     BenefitsSection,
     FooterSection
   }

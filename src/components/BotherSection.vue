@@ -1,9 +1,12 @@
 <template>
   <div
-    class="overflow-hidden mqMobile:bother-background max-w-full flex flex-row items-start justify-start pt-[30px] px-[152px] mq1350:px-[46px] pb-[82px] box-border gap-[110px] mq900:gap-0 z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[53px] mq900:box-border mq450:pb-[34px] mq450:box-border mq1800:flex-wrap"
+    :class="{
+      'bother-background': isDesktop,
+      'overflow-hidden max-w-full flex flex-row items-start justify-start pt-[30px] mq1350:px-[46px] pb-[82px] box-border gap-[110px] mq900:gap-0 z-[1] mt-[-3px] text-left text-45xl text-material-theme-extended-deep-blue-signature-seed font-roboto mq900:pb-[53px] mq900:box-border mq450:pb-[34px] mq450:box-border mq1800:flex-wrap': true
+    }"
   >
     <div
-      class="max-w-[550px] flex flex-col items-start justify-start gap-[155px] mq1185:gap-[150px] mq900:gap-[60px] mq1800:flex-1"
+      class="max-w-[550px] flex flex-col items-start justify-start gap-[195px] mq1185:gap-[150px] mq900:gap-[60px] mq1800:flex-1"
     >
       <div class="self-stretch flex flex-row items-start justify-start">
         <h1
@@ -53,11 +56,11 @@
         <div
           class="flex flex-col items-start justify-start gap-[43px] mq900:gap-[21px] mq900:mb-[40px]"
         >
-          <div class="flex flex-row items-start justify-start py-0 px-1 box-border">
+          <div class="flex flex-row items-start justify-start py-0 box-border">
             <h1
               class="m-0 flex-1 relative leading-[44px] font-semibold inline-block z-[2] text-29xl mq900:leading-[35px] mq450:text-10xl mq450:leading-[26px]"
             >
-              Příliš dlouhá reakční doba
+              Neuspokojivá komunikace s hosty
             </h1>
           </div>
           <div
@@ -72,9 +75,9 @@
             <div
               class="h-[104px] flex-1 relative leading-[30px] inline-block z-[3] mq450:text-lgi mq450:leading-[24px]"
             >
-              U tak složitých procesů, jako je provoz hotelového zařízení, nelze problémům nikdy
-              zcela zabránit. Někdy se prostě vyskytne problém, který je třeba rychle a správně
-              vyřešit.
+              Udržet dostatečnou komunikaci s hosty během jejich pobytu není vždy snadné. Může se
+              snadno stát, že vám hosté nedají vědět svá přání či požadavky nebo nevyužijí vaše
+              další doplňkové služby.
             </div>
           </div>
         </div>
@@ -113,18 +116,29 @@
 
 <style lang="scss" scoped>
 .bother-background {
-  background-image: url('public/backgroundshapes1.png');
-  background-size: 100%;
+  background-image: url('/backgroundshapes1.png');
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
 }
 </style>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 
-export default defineComponent({
-  name: 'BotherSection'
+const isDesktop = ref(window.innerWidth > 900)
+
+const updateIsDesktop = () => {
+  isDesktop.value = window.innerWidth > 900
+}
+
+onMounted(() => {
+  window.addEventListener('resize', updateIsDesktop)
+  updateIsDesktop() // Initial check
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateIsDesktop)
 })
 </script>

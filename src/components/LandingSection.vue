@@ -1,11 +1,11 @@
 <template>
   <div
-    class="bg-schemes-on-primary flex flex-col pb-[68px] px-[92px] mq900:px-[23px] mq1350:pb-11 mq1350:px-[46px] box-border gap-[28px] max-w-full text-material-theme-extended-deep-blue-signature-seed font-roboto"
+    class="bg-schemes-on-primary flex flex-col pb-[68px] px-[92px] mq900:px-[10px] mq1350:pb-11 mq1350:px-[46px] box-border gap-[28px] max-w-full text-material-theme-extended-deep-blue-signature-seed font-roboto"
   >
     <header
       class="flex flex-row justify-start text-13xl text-material-theme-black font-roboto mq900:gap-[38px] mq450:gap-[19px]"
     >
-      <div class="flex-1 flex flex-col gap-[47px] max-w-[1000px] mq900:gap-[23px]">
+      <div class="flex-1 flex flex-col mt-4 gap-[47px] max-w-[1000px] mq900:gap-[23px]">
         <div
           class="shadow-[6px_12px_15px_rgba(0,_0,_0,_0.25)] max-w-[1620px] rounded-medium bg-material-theme-extended-deep-blue-signature-seed flex flex-col items-start justify-start pt-12 px-[119px] pb-[7px] box-border gap-[40px] max-w-full z-[1] text-left text-45xl text-schemes-on-primary mq900:gap-[23px] mq900:pt-[31px] mq900:px-[29px] mq900:pb-5 mq900:box-border mq1350:gap-[46px] mq1350:pl-[59px] mq1350:pr-[59px] mq1350:box-border"
         >
@@ -75,7 +75,7 @@
       >
         <div class="w-[1033px] flex flex-row items-start justify-center max-w-full">
           <h1
-            class="m-0 pt-[15px] text-19xl relative leading-[46px] font-semibold font-inherit z-[2] mq900:leading-[40px] mq450:text-19xl mq450:leading-[30px]"
+            class="m-0 pt-[15px] text-19xl relative leading-[46px] font-semibold font-inherit z-[2] mq900:leading-[40px] mq450:text-19xl"
           >
             Důvěřují nám hotéliéři různých velikostí
           </h1>

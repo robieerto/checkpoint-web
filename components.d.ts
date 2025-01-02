@@ -19,6 +19,7 @@ declare module 'vue' {
     ReservationForm: typeof import('./src/components/ReservationForm.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SmallTestimonialsSection: typeof import('./src/components/SmallTestimonialsSection.vue')['default']
     TestimonialsSection: typeof import('./src/components/TestimonialsSection.vue')['default']
   }
 }

@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-row items-start justify-center pt-[40px] pb-[30px] px-6 box-border max-w-full"
-  >
+  <div class="flex flex-row items-start justify-center px-6 box-border max-w-full">
     <form
       @submit.prevent="submit"
       class="m-0 max-w-[725px] flex flex-col items-center justify-start gap-[15.5px]"

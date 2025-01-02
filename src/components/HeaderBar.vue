@@ -3,7 +3,7 @@
     class="bg-schemes-on-primary fixed w-full flex justify-center z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
   >
     <div
-      class="flex flex-wrap items-center w-full justify-between pt-4 pb-2 mq900:px-[30px] pl-[142px] pr-[142px] max-w-[1500px]"
+      class="flex flex-wrap items-center w-full justify-between pt-4 pb-2 mq900:px-[30px] px-[92px] max-w-[1530px]"
     >
       <img
         class="cursor-pointer mq950:w-[206px] w-[306px] !m-[0] left-[-3px]"
@@ -29,11 +29,7 @@
       >
         <span class="sr-only">Open main menu</span>
         <img v-if="!isMenuExpanded" class="w-[406px]" loading="lazy" alt="" src="/menu.svg" />
-        <svg v-else viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"
-          />
-        </svg>
+        <img v-else class="w-[406px]" loading="lazy" alt="" src="/close.svg" />
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-sticky">
         <div
