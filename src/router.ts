@@ -3,6 +3,7 @@ import Root from './pages/Root.vue'
 import Reservation from './pages/Reservation.vue'
 import GetInfo from './pages/GetInfo.vue'
 import PrivacyRules from './pages/PrivacyRules.vue'
+import NotFound from './pages/NotFound.vue'
 
 interface Route {
   path: string
@@ -30,6 +31,11 @@ const routes: Route[] = [
     path: '/checkpoint-privacy/',
     name: 'PrivacyRules',
     component: PrivacyRules
+  },
+  {
+    path: '/:pathMatch(.*)*', // Catch-all route
+    name: 'NotFound',
+    component: NotFound
   }
 ]
 

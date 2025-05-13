@@ -14,20 +14,21 @@
         font-size: 42pt;
       "
     >
-      <a id="_n3alxvbpd71a"></a><strong>Pravidlá ochrany súkromia - Checkpoint</strong>
+      <a id="_n3alxvbpd71a"></a
+      ><strong>Privacy Policy - Pravidlá ochrany súkromia - Checkpoint by ofrules</strong>
     </h1>
     <p
       class="normal0"
       style="margin-top: 2pt; margin-bottom: 1pt; line-height: 150%; font-size: 12pt"
     >
-      Ochrana súkromia a osobných údajov aplikácie Checkpoint
+      Ochrana súkromia a osobných údajov aplikácie Checkpoint by ofrules
     </p>
     <p
       class="normal0"
       style="margin-top: 1pt; margin-bottom: 1pt; line-height: 150%; font-size: 12pt"
     >
-      Prevádzkovateľom aplikácie Checkpoint je Dávid Šimko – Produkcia, Palárikova 2241/12, 058 01
-      Poprad, IČO: 55230547
+      Prevádzkovateľom aplikácie Checkpoint by ofrules je Juraj Chripko, Námestie sv. Egídia 7/15,
+      058 01 Poprad
     </p>
     <p
       class="normal0"
